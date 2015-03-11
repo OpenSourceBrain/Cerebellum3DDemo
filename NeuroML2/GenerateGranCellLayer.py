@@ -47,17 +47,17 @@ for syn in [grc_gol_syn, gol_grc_syn]:
 
 
 # Volume
-x_size = 200
-y_size = 50
-z_size = 200
+x_size = 1000
+y_size = 100
+z_size = 1000
 
 
 
-numCells_grc = 40
+numCells_grc = 400
 numCells_gol = 20
 
 # Connection probabilities (initial value)
-connection_probability_grc_gol =   0.1
+connection_probability_grc_gol =   0.2
 connection_probability_gol_grc =   0.1
 
 
