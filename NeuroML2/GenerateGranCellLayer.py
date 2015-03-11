@@ -47,13 +47,13 @@ for syn in grc_gol_syns+gol_grc_syns:
 
 
 # Volume
-x_size = 1000
-y_size = 1000
-z_size = 1000
+x_size = 200
+y_size = 50
+z_size = 200
 
 
 
-numCells_grc = 200
+numCells_grc = 400
 numCells_gol = 20
 
 # Connection probabilities (initial value)
@@ -70,6 +70,16 @@ for i in range(0, numCells_grc) :
         index = i
         inst = Instance(id=index)
         grc_pop.instances.append(inst)
+        inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+
+# Generate inhibitory cells
+gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
+net.populations.append(gol_pop)
+
+for i in range(0, numCells_gol) :
+        index = i
+        inst = Instance(id=index)
+        gol_pop.instances.append(inst)
         inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
     
 '''
