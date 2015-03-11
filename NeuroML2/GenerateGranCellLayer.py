@@ -39,10 +39,10 @@ net_conn_grc_gol = "net_conn_grc_gol"
 net_conn_gol_grc = "net_conn_gol_grc"
 
 # The names of the synapse types (should match names at Cell Mechanism/Network tabs in neuroConstruct)
-grc_gol_syns = ["AMPA_GranGol"]
-gol_grc_syns = ["GABAA"]
+grc_gol_syn = "AMPA_GranGol"
+gol_grc_syn = "GABAA"
 
-for syn in grc_gol_syns+gol_grc_syns:
+for syn in [grc_gol_syn, gol_grc_syn]:
 	nml_doc.includes.append(IncludeType(href='%s.synapse.nml'%syn))
 
 
@@ -53,7 +53,7 @@ z_size = 200
 
 
 
-numCells_grc = 400
+numCells_grc = 40
 numCells_gol = 20
 
 # Connection probabilities (initial value)
@@ -82,44 +82,21 @@ for i in range(0, numCells_gol) :
         gol_pop.instances.append(inst)
         inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
     
-'''
-# Generate inhibitory cells
-
-inh_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=XSCALE_inh*ZSCALE_inh)
-net.populations.append(inh_pop)
-
-for i in range(0, XSCALE_inh) :
-    for j in range(0, ZSCALE_inh):
-        # create cells
-        x = i*xSpacing_inh
-        z = j*zSpacing_inh
-        index = i*ZSCALE_inh + j 
-
-        inst = Instance(id=index)
-        inh_pop.instances.append(inst)
-
-        inst.location = Location(x=x, y=0, z=z)
 
 
 
-proj_grc_exc = Projection(id=net_conn_grc_exc, presynaptic_population=grc_group, postsynaptic_population=grc_group, synapse=grc_grc_syn)
-net.projections.append(proj_grc_exc)
-proj_grc_inh = Projection(id=net_conn_grc_inh, presynaptic_population=grc_group, postsynaptic_population=gol_group, synapse=grc_inh_syn)
-net.projections.append(proj_grc_inh)
-proj_inh_exc = Projection(id=net_conn_inh_exc, presynaptic_population=gol_group, postsynaptic_population=grc_group, synapse=inh_grc_syn)
-net.projections.append(proj_inh_exc)
-proj_inh_inh = Projection(id=net_conn_inh_inh, presynaptic_population=gol_group, postsynaptic_population=gol_group, synapse=inh_inh_syn)
-net.projections.append(proj_inh_inh)
 
+
+proj_grc_gol = Projection(id=net_conn_grc_gol, presynaptic_population=grc_group, postsynaptic_population=gol_group, synapse=grc_gol_syn)
+net.projections.append(proj_grc_gol)
+proj_gol_grc = Projection(id=net_conn_gol_grc, presynaptic_population=gol_group, postsynaptic_population=grc_group, synapse=gol_grc_syn)
+net.projections.append(proj_gol_grc)
+
+count_grc_gol = 0
 
 # Generate exc -> *  connections
 
-grc_grc_conn_number =  [[0 for x in xrange(ZSCALE_ex)] for x in xrange(XSCALE_ex)]
-grc_inh_conn_number =  [[0 for x in xrange(ZSCALE_ex)] for x in xrange(XSCALE_ex)]
-count_grc_exc = 0
-count_grc_inh = 0
-count_inh_exc = 0
-count_inh_inh = 0
+
 
 
 def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_id, post_pop, post_component, post_cell_id, post_seg_id):
@@ -135,7 +112,12 @@ def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_
     projection.connections.append(connection)
 
 
-'''
+for i in range(0, numCells_grc) :
+	for j in range(0, numCells_gol) :
+		if random()<connection_probability_grc_gol:
+		
+                 	add_connection(proj_grc_gol, count_grc_gol, grc_group, grc_group_component, i, 0, gol_group, gol_group_component, j, 0)
+			count_grc_gol+=1
 
 
 
