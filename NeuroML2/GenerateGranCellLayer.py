@@ -57,7 +57,7 @@ numCells_grc = 40
 numCells_gol = 20
 
 # Connection probabilities (initial value)
-connection_probability_grc_gol =   0.5
+connection_probability_grc_gol =   0.1
 connection_probability_gol_grc =   0.1
 
 
@@ -93,6 +93,7 @@ proj_gol_grc = Projection(id=net_conn_gol_grc, presynaptic_population=gol_group,
 net.projections.append(proj_gol_grc)
 
 count_grc_gol = 0
+count_gol_grc = 0
 
 # Generate exc -> *  connections
 
@@ -114,10 +115,16 @@ def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_
 
 for i in range(0, numCells_grc) :
 	for j in range(0, numCells_gol) :
-		if random()<connection_probability_grc_gol:
+		if i != j:
+		    if random()<connection_probability_grc_gol:
 		
                  	add_connection(proj_grc_gol, count_grc_gol, grc_group, grc_group_component, i, 0, gol_group, gol_group_component, j, 0)
 			count_grc_gol+=1
+
+		    if random()<connection_probability_gol_grc:
+		
+                 	add_connection(proj_gol_grc, count_gol_grc, gol_group, gol_group_component, j, 0, grc_group, grc_group_component, i, 0)
+			count_gol_grc+=1
 
 
 
