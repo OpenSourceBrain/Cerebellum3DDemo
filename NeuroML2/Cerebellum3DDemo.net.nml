@@ -1,8 +1,8 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Cerebellum3DDemo">
-    <include href="Granule_98.cell.nml"></include>
-    <include href="Golgi_98.cell.nml"></include>
-    <include href="AMPA_GranGol.synapse.nml"></include>
-    <include href="GABAA.synapse.nml"></include>
+    <include href="Granule_98.cell.nml"/>
+    <include href="Golgi_98.cell.nml"/>
+    <include href="AMPA_GranGol.synapse.nml"/>
+    <include href="GABAA.synapse.nml"/>
     <network id="Cerebellum3DDemo">
         <population id="Grcs" component="Granule_98" type="populationList" size="40">
             <instance id="0">
