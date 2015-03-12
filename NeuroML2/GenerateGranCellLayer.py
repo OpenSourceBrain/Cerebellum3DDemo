@@ -53,7 +53,7 @@ z_size = 1000
 
 
 
-numCells_grc = 400
+numCells_grc = 40
 numCells_gol = 20
 
 # Connection probabilities (initial value)
@@ -82,8 +82,6 @@ for i in range(0, numCells_gol) :
         gol_pop.instances.append(inst)
         inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
     
-
-
 
 
 
