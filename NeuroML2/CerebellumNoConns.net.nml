@@ -1,0 +1,192 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="Cerebellum3DDemo">
+    <include href="Granule_98.cell.nml"></include>
+    <include href="Golgi_98.cell.nml"></include>
+    <include href="AMPA_GranGol.synapse.nml"></include>
+    <include href="GABAA.synapse.nml"></include>
+    <network id="Cerebellum3DDemo">
+        <population id="Grcs" component="Granule_98" type="populationList" size="40">
+            <instance id="0">
+                <location y="98.822865320000005" x="302.963040503999991" z="80.602456738300006"/>
+            </instance>
+            <instance id="1">
+                <location y="41.3994158179" x="674.968305336999947" z="786.502773158999958"/>
+            </instance>
+            <instance id="2">
+                <location y="38.982328701299998" x="285.846057425000026" z="101.882514211"/>
+            </instance>
+            <instance id="3">
+                <location y="15.980337116899999" x="973.372177005000026" z="103.967779836999995"/>
+            </instance>
+            <instance id="4">
+                <location y="32.9982205966" x="984.630553790000022" z="989.66794572699996"/>
+            </instance>
+            <instance id="5">
+                <location y="99.177138642000003" x="272.479720928999996" z="635.207586192999997"/>
+            </instance>
+            <instance id="6">
+                <location y="20.120876643500001" x="63.903286847700002" z="119.507188474000003"/>
+            </instance>
+            <instance id="7">
+                <location y="4.27920578014" x="909.778526850000048" z="123.450542421999998"/>
+            </instance>
+            <instance id="8">
+                <location y="66.915470633300004" x="405.868410267000002" z="87.106584605899997"/>
+            </instance>
+            <instance id="9">
+                <location y="38.6234624967" x="333.917752602000007" z="734.647508144999961"/>
+            </instance>
+            <instance id="10">
+                <location y="99.338911098500006" x="681.706878544000006" z="908.72647580499995"/>
+            </instance>
+            <instance id="11">
+                <location y="93.741398614800005" x="570.953034966000018" z="531.670249162000005"/>
+            </instance>
+            <instance id="12">
+                <location y="42.502391401399997" x="722.048386187000006" z="438.694152712999994"/>
+            </instance>
+            <instance id="13">
+                <location y="63.651809382400003" x="627.899461965" z="116.981067354999993"/>
+            </instance>
+            <instance id="14">
+                <location y="59.345165428100003" x="76.077924187899995" z="352.865731989999972"/>
+            </instance>
+            <instance id="15">
+                <location y="26.240422441700002" x="995.97079119" z="377.155115038000019"/>
+            </instance>
+            <instance id="16">
+                <location y="61.439066919600002" x="14.883502845100001" z="904.559643239000025"/>
+            </instance>
+            <instance id="17">
+                <location y="1.08632164288" x="883.149085840999987" z="798.679366705999996"/>
+            </instance>
+            <instance id="18">
+                <location y="87.713795684999994" x="755.378514188000054" z="492.550178635000009"/>
+            </instance>
+            <instance id="19">
+                <location y="84.429917271299999" x="78.9919899617" z="18.002815437100001"/>
+            </instance>
+            <instance id="20">
+                <location y="61.056755378399998" x="759.380748399000026" z="915.630771067999945"/>
+            </instance>
+            <instance id="21">
+                <location y="0.798785776913" x="335.545753148000017" z="645.378685669999982"/>
+            </instance>
+            <instance id="22">
+                <location y="0.0556926380644" x="915.452707637999993" z="764.385792373999948"/>
+            </instance>
+            <instance id="23">
+                <location y="96.288766284000005" x="468.306234856000003" z="511.999349736999989"/>
+            </instance>
+            <instance id="24">
+                <location y="19.5512921334" x="755.605701282000041" z="758.537176884000019"/>
+            </instance>
+            <instance id="25">
+                <location y="58.753984021000001" x="261.701420252999981" z="60.073634300599998"/>
+            </instance>
+            <instance id="26">
+                <location y="74.061016910299998" x="26.612240460599999" z="382.845603532999974"/>
+            </instance>
+            <instance id="27">
+                <location y="84.953278346199994" x="231.883011331999995" z="269.015369831999976"/>
+            </instance>
+            <instance id="28">
+                <location y="3.63520678687" x="91.491054035000005" z="523.669603138999946"/>
+            </instance>
+            <instance id="29">
+                <location y="36.335138893100002" x="387.910598731999983" z="355.328813152999999"/>
+            </instance>
+            <instance id="30">
+                <location y="68.519025775599999" x="581.045854941000016" z="699.231009318000019"/>
+            </instance>
+            <instance id="31">
+                <location y="1.62490938679" x="121.459030869000003" z="44.821745895699998"/>
+            </instance>
+            <instance id="32">
+                <location y="81.979882791500003" x="930.526318513999968" z="111.008128389000007"/>
+            </instance>
+            <instance id="33">
+                <location y="48.0220122084" x="81.560406007599994" z="740.379027582000049"/>
+            </instance>
+            <instance id="34">
+                <location y="77.307423427700002" x="699.746565336000003" z="257.283736465000004"/>
+            </instance>
+            <instance id="35">
+                <location y="90.942712110000002" x="647.376563003999991" z="217.837901910999989"/>
+            </instance>
+            <instance id="36">
+                <location y="5.51921380045" x="1.27783733327" z="957.646981091000043"/>
+            </instance>
+            <instance id="37">
+                <location y="10.837481431600001" x="102.552913576999998" z="443.941206396999974"/>
+            </instance>
+            <instance id="38">
+                <location y="79.241318840999995" x="297.57096784700002" z="811.020065813999963"/>
+            </instance>
+            <instance id="39">
+                <location y="23.318019471300001" x="477.284844245999977" z="160.74790501199999"/>
+            </instance>
+        </population>
+        <population id="Golgis" component="Golgi_98" type="populationList" size="20">
+            <instance id="0">
+                <location y="5.70274633189" x="167.12018736600001" z="831.329305047000048"/>
+            </instance>
+            <instance id="1">
+                <location y="48.100631435700002" x="912.706729160999998" z="224.361834264000009"/>
+            </instance>
+            <instance id="2">
+                <location y="67.033087861200002" x="903.862347598000042" z="617.776253179000037"/>
+            </instance>
+            <instance id="3">
+                <location y="41.755930102999997" x="572.90153310300002" z="731.515961577999974"/>
+            </instance>
+            <instance id="4">
+                <location y="98.643398206300006" x="821.714624875000027" z="246.517257790999992"/>
+            </instance>
+            <instance id="5">
+                <location y="77.227015789099994" x="327.591161195999973" z="397.359168708000027"/>
+            </instance>
+            <instance id="6">
+                <location y="12.1132611733" x="429.464453834999972" z="164.95311530699999"/>
+            </instance>
+            <instance id="7">
+                <location y="87.417634295599996" x="178.602336931999986" z="839.80282838200003"/>
+            </instance>
+            <instance id="8">
+                <location y="80.489621313699999" x="529.166547069999979" z="904.738146451000034"/>
+            </instance>
+            <instance id="9">
+                <location y="54.903772420700001" x="561.704640726999969" z="46.9154656304"/>
+            </instance>
+            <instance id="10">
+                <location y="21.746590892699999" x="342.779756510000027" z="94.086729337600005"/>
+            </instance>
+            <instance id="11">
+                <location y="88.096497403499995" x="550.26305532799995" z="837.378325058999962"/>
+            </instance>
+            <instance id="12">
+                <location y="8.963029486430001" x="446.595292651000022" z="504.133397111000022"/>
+            </instance>
+            <instance id="13">
+                <location y="79.433320120299996" x="465.16648084000002" z="467.08045131199998"/>
+            </instance>
+            <instance id="14">
+                <location y="39.522151932100002" x="964.568262218999962" z="120.096613292000001"/>
+            </instance>
+            <instance id="15">
+                <location y="39.579754082400001" x="474.989472245999991" z="410.938888153999983"/>
+            </instance>
+            <instance id="16">
+                <location y="11.1323887703" x="783.204260588000011" z="435.013883469000007"/>
+            </instance>
+            <instance id="17">
+                <location y="47.134584084700002" x="169.302534511999994" z="347.521675775999995"/>
+            </instance>
+            <instance id="18">
+                <location y="71.092086097700005" x="758.890917758000001" z="717.585004187999971"/>
+            </instance>
+            <instance id="19">
+                <location y="50.722214137599998" x="742.673848642000053" z="486.345703479000008"/>
+            </instance>
+        </population>
+    </network>
+</neuroml>
