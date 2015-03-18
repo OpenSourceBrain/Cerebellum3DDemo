@@ -6,189 +6,442 @@
     <network id="Cerebellum3DDemo">
         <population id="Grcs" component="Granule_98" type="populationList" size="40">
             <instance id="0">
-                <location y="46.724891275099999" x="690.85396984099998" z="851.609059461000015"/>
+                <location y="94.489311573400002" x="802.307844520000003" z="420.380021517999978"/>
             </instance>
             <instance id="1">
-                <location y="84.580216594099994" x="952.173075195000024" z="485.75861433099999"/>
+                <location y="19.681361495099999" x="951.207274238999958" z="890.350717247000034"/>
             </instance>
             <instance id="2">
-                <location y="13.365595639" x="880.679061956000055" z="418.558571588999996"/>
+                <location y="96.543986443400001" x="410.895318228000008" z="246.858977237000005"/>
             </instance>
             <instance id="3">
-                <location y="28.160309883299998" x="892.981037751000031" z="802.666208972000049"/>
+                <location y="95.127635053199995" x="28.450358289099999" z="640.772007076000023"/>
             </instance>
             <instance id="4">
-                <location y="79.764033173800001" x="317.536557689999995" z="627.182451046999972"/>
+                <location y="66.028938991499999" x="692.415664975000027" z="557.688952484999959"/>
             </instance>
             <instance id="5">
-                <location y="55.739817507600002" x="993.548571294999988" z="911.339345886000046"/>
+                <location y="80.595090894799995" x="209.380422632999995" z="687.774818892999974"/>
             </instance>
             <instance id="6">
-                <location y="89.894293751299998" x="999.580474009" z="393.121210841999982"/>
+                <location y="39.404037949200003" x="121.318852178" z="777.338653864999969"/>
             </instance>
             <instance id="7">
-                <location y="20.768297682099998" x="454.570665696999981" z="401.708823230000007"/>
+                <location y="28.442771158300001" x="374.61314686999998" z="391.410664537999992"/>
             </instance>
             <instance id="8">
-                <location y="30.525911338" x="632.872828661999961" z="552.501544126999988"/>
+                <location y="45.548548859199997" x="424.38505778199999" z="127.791122086000001"/>
             </instance>
             <instance id="9">
-                <location y="76.689820400299993" x="168.150679454999988" z="16.098754164900001"/>
+                <location y="77.889703451399996" x="90.333865744899995" z="702.925237559000038"/>
             </instance>
             <instance id="10">
-                <location y="74.801868957400004" x="424.663158849000013" z="253.384564259999991"/>
+                <location y="43.174867392899998" x="676.868494604000034" z="426.196194391999995"/>
             </instance>
             <instance id="11">
-                <location y="28.007488023699999" x="32.111972232100001" z="442.487381632999984"/>
+                <location y="62.221069899100002" x="154.172501334000003" z="505.884162448999973"/>
             </instance>
             <instance id="12">
-                <location y="96.178599274700005" x="58.489975236299998" z="484.200904207999997"/>
+                <location y="51.496709468100001" x="403.881523601000026" z="147.026621666000011"/>
             </instance>
             <instance id="13">
-                <location y="44.459189669600001" x="542.358756608000022" z="746.331635925"/>
+                <location y="96.2206423616" x="591.949135532000014" z="65.079430681000005"/>
             </instance>
             <instance id="14">
-                <location y="46.358461408099998" x="585.047768384000051" z="224.100755088"/>
+                <location y="9.64284705317" x="187.420483982999997" z="452.336832119999997"/>
             </instance>
             <instance id="15">
-                <location y="3.03582477511" x="827.320575914999949" z="154.324161233000012"/>
+                <location y="10.245483349600001" x="408.319318026000019" z="847.224634119000029"/>
             </instance>
             <instance id="16">
-                <location y="8.796494726520001" x="43.054980304700003" z="444.152205302000027"/>
+                <location y="81.113193285799994" x="823.041920299000026" z="406.257475850999981"/>
             </instance>
             <instance id="17">
-                <location y="71.586048408899998" x="733.968578954000009" z="173.963884387999997"/>
+                <location y="66.336430227199997" x="661.644781448999993" z="146.336316240000002"/>
             </instance>
             <instance id="18">
-                <location y="95.319774851899993" x="969.541490503999967" z="472.15427962199999"/>
+                <location y="53.720152151299999" x="384.269032861000028" z="639.279514590999952"/>
             </instance>
             <instance id="19">
-                <location y="56.982231783099998" x="562.260676751999995" z="227.857031183000004"/>
+                <location y="72.182265048199994" x="513.341014666999968" z="224.159747250999999"/>
             </instance>
             <instance id="20">
-                <location y="68.896844758200004" x="191.411064326000002" z="18.949706927200001"/>
+                <location y="98.820413781699997" x="223.96558090100001" z="773.884682934000011"/>
             </instance>
             <instance id="21">
-                <location y="4.25876204627" x="152.058441663999986" z="849.41710291000004"/>
+                <location y="0.273211084757" x="438.222295739999993" z="728.13654743799998"/>
             </instance>
             <instance id="22">
-                <location y="96.781778121499997" x="385.166556329999992" z="847.534120277000056"/>
+                <location y="2.62380295655" x="38.614683913699999" z="753.039504084999976"/>
             </instance>
             <instance id="23">
-                <location y="70.958512312699995" x="506.468895335000013" z="64.907395861699996"/>
+                <location y="29.651919485299999" x="269.551812586999972" z="459.329672486999982"/>
             </instance>
             <instance id="24">
-                <location y="94.371390375100006" x="296.681557252999994" z="255.418513458000007"/>
+                <location y="78.066096505000004" x="993.225751446000004" z="879.145763287000023"/>
             </instance>
             <instance id="25">
-                <location y="67.828393005300001" x="991.854813605000004" z="427.599021972999992"/>
+                <location y="23.142664532800001" x="663.951696523999999" z="390.645876136000027"/>
             </instance>
             <instance id="26">
-                <location y="87.899816147099997" x="654.923343013000022" z="55.381506536400003"/>
+                <location y="77.980991196000005" x="856.797086075000038" z="906.506014740999944"/>
             </instance>
             <instance id="27">
-                <location y="66.658666676199999" x="324.135406846000024" z="126.985409200000007"/>
+                <location y="41.681237089299998" x="172.152890207000013" z="351.903765125999996"/>
             </instance>
             <instance id="28">
-                <location y="79.074381706500006" x="860.36690562299998" z="963.68238210100003"/>
+                <location y="39.505914018699997" x="29.445860929999998" z="160.010852091000004"/>
             </instance>
             <instance id="29">
-                <location y="82.408440748800004" x="432.158669976999988" z="986.785275180999975"/>
+                <location y="50.962903602399997" x="657.418572335000022" z="723.330831542000055"/>
             </instance>
             <instance id="30">
-                <location y="24.994746583600001" x="467.222577037000008" z="62.661423659599997"/>
+                <location y="12.853395171900001" x="197.121164826000012" z="417.877520440000012"/>
             </instance>
             <instance id="31">
-                <location y="8.256761132859999" x="978.694380329999944" z="460.484820324999987"/>
+                <location y="17.8825867971" x="671.832490738000047" z="299.157271628999979"/>
             </instance>
             <instance id="32">
-                <location y="13.4395474804" x="872.04651120799997" z="572.753811928000005"/>
+                <location y="84.320091252200001" x="859.817796030999943" z="171.917871717999986"/>
             </instance>
             <instance id="33">
-                <location y="59.723919134600003" x="97.488453850699997" z="726.181663964999984"/>
+                <location y="20.352738939200002" x="531.043746125999974" z="223.365177425000013"/>
             </instance>
             <instance id="34">
-                <location y="70.898934781899996" x="152.100503115000009" z="608.481678995000038"/>
+                <location y="4.25359738457" x="67.161747776699997" z="926.963986419999969"/>
             </instance>
             <instance id="35">
-                <location y="34.302234947400002" x="945.126637995999999" z="508.975999987000023"/>
+                <location y="52.781099408300001" x="604.651164601000005" z="961.67112953000003"/>
             </instance>
             <instance id="36">
-                <location y="59.260913338199998" x="978.38644353899997" z="633.404346228999998"/>
+                <location y="7.01846269777" x="183.09835692499999" z="968.512029676999987"/>
             </instance>
             <instance id="37">
-                <location y="30.320988557" x="295.500048462999985" z="719.977268432999949"/>
+                <location y="46.662940763400002" x="949.972398504000012" z="812.476431254999966"/>
             </instance>
             <instance id="38">
-                <location y="18.062803516500001" x="971.598856590999958" z="657.687674585999957"/>
+                <location y="5.22989042052" x="506.830015299000024" z="182.759928945000013"/>
             </instance>
             <instance id="39">
-                <location y="10.4690276395" x="951.510151479000001" z="0.520981553323"/>
+                <location y="1.79695387635" x="106.466218554999998" z="475.184117642999979"/>
             </instance>
         </population>
         <population id="Golgis" component="Golgi_98" type="populationList" size="20">
             <instance id="0">
-                <location y="57.797790548599998" x="827.334288280999999" z="24.2036897021"/>
+                <location y="97.177357713899994" x="152.486814750000008" z="683.957414444000051"/>
             </instance>
             <instance id="1">
-                <location y="50.096336740700004" x="432.827314081999987" z="943.164381054000046"/>
+                <location y="85.888780458400007" x="127.976549234999993" z="993.750502943000015"/>
             </instance>
             <instance id="2">
-                <location y="64.368525384199998" x="597.823308601000008" z="858.144166906999999"/>
+                <location y="57.062854452499998" x="461.834870077999994" z="775.273673389999999"/>
             </instance>
             <instance id="3">
-                <location y="51.528770891400001" x="503.743595622999976" z="729.843034329000034"/>
+                <location y="45.541506673400001" x="522.806501320000052" z="787.944119629000056"/>
             </instance>
             <instance id="4">
-                <location y="36.9466324833" x="824.020927239000002" z="444.35046218399998"/>
+                <location y="92.2378761919" x="415.180621949999988" z="819.012656024999956"/>
             </instance>
             <instance id="5">
-                <location y="89.387109796000004" x="182.546017506999988" z="972.092279320999978"/>
+                <location y="84.768992910500003" x="581.135519713000008" z="758.435265412000035"/>
             </instance>
             <instance id="6">
-                <location y="40.680997300800001" x="452.558839850000027" z="241.35634529699999"/>
+                <location y="43.649406703700002" x="449.250572165999984" z="525.288089434999961"/>
             </instance>
             <instance id="7">
-                <location y="92.178911573899995" x="290.111440458999994" z="655.656165955999995"/>
+                <location y="45.2693063133" x="189.001463782000002" z="328.659662762999972"/>
             </instance>
             <instance id="8">
-                <location y="35.8050989973" x="372.716613875999997" z="964.859739470000022"/>
+                <location y="76.314367233599995" x="157.151229115999996" z="840.235782649000043"/>
             </instance>
             <instance id="9">
-                <location y="91.030806412000004" x="444.349218312000005" z="775.109261081"/>
+                <location y="99.154960038200002" x="566.118719994999992" z="729.700362440000049"/>
             </instance>
             <instance id="10">
-                <location y="9.67054978951" x="408.684094829000003" z="175.219020900999993"/>
+                <location y="84.188417711599996" x="895.642605898000056" z="101.204282176000007"/>
             </instance>
             <instance id="11">
-                <location y="67.845305490200005" x="999.185506085000043" z="300.070578411999975"/>
+                <location y="8.7463301256" x="867.588473969999995" z="585.882454958000039"/>
             </instance>
             <instance id="12">
-                <location y="90.932959533499996" x="691.293145556000013" z="97.185996759199995"/>
+                <location y="57.788680434500002" x="772.700282998000034" z="643.112523912000029"/>
             </instance>
             <instance id="13">
-                <location y="71.100001038000002" x="202.961089651999998" z="60.472434747699999"/>
+                <location y="59.488892921900003" x="563.918633581999984" z="804.432832658000052"/>
             </instance>
             <instance id="14">
-                <location y="67.543400166699996" x="140.64811893000001" z="552.097427340999957"/>
+                <location y="79.087655371400004" x="851.767654610000022" z="340.698205545000008"/>
             </instance>
             <instance id="15">
-                <location y="8.804112162119999" x="897.819414682000001" z="359.224920015000009"/>
+                <location y="47.653467153000001" x="878.712536856000042" z="71.019506644900005"/>
             </instance>
             <instance id="16">
-                <location y="18.032217037999999" x="30.321059650799999" z="169.542204822999992"/>
+                <location y="37.906963510700002" x="308.605709463999972" z="63.142185488700001"/>
             </instance>
             <instance id="17">
-                <location y="81.812383625099997" x="280.582893356" z="758.948454799000046"/>
+                <location y="59.582524378199999" x="17.401903190900001" z="338.273729441"/>
             </instance>
             <instance id="18">
-                <location y="37.704814980899997" x="365.268198198999983" z="38.343402712600003"/>
+                <location y="61.165699678199999" x="691.869676131999995" z="29.252244027700002"/>
             </instance>
             <instance id="19">
-                <location y="30.102399957399999" x="620.201565088000052" z="620.699994250000032"/>
+                <location y="2.18003166391" x="566.891818842000021" z="166.813938008000008"/>
             </instance>
         </population>
-        <projection id="net_conn_grc_gol" postsynapticPopulation="Golgis" presynapticPopulation="Grcs" synapse="AMPA_GranGol"/>
-        <projection id="net_conn_gol_grc" postsynapticPopulation="Grcs" presynapticPopulation="Golgis" synapse="GABAA"/>
+        <projection id="net_conn_grc_gol" postsynapticPopulation="Golgis" presynapticPopulation="Grcs" synapse="AMPA_GranGol">
+            <connection id="0" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="1" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="2" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="3" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="4" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="5" preFractionAlong="0.5" preCellId="../Grcs/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="6" preFractionAlong="0.5" preCellId="../Grcs/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/4/Golgi_98" preSegmentId="0"/>
+            <connection id="7" preFractionAlong="0.5" preCellId="../Grcs/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="8" preFractionAlong="0.5" preCellId="../Grcs/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="9" preFractionAlong="0.5" preCellId="../Grcs/2/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="10" preFractionAlong="0.5" preCellId="../Grcs/2/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="11" preFractionAlong="0.5" preCellId="../Grcs/3/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="12" preFractionAlong="0.5" preCellId="../Grcs/3/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="13" preFractionAlong="0.5" preCellId="../Grcs/4/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="14" preFractionAlong="0.5" preCellId="../Grcs/4/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="15" preFractionAlong="0.5" preCellId="../Grcs/4/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="16" preFractionAlong="0.5" preCellId="../Grcs/4/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="17" preFractionAlong="0.5" preCellId="../Grcs/4/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="18" preFractionAlong="0.5" preCellId="../Grcs/5/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="19" preFractionAlong="0.5" preCellId="../Grcs/5/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="20" preFractionAlong="0.5" preCellId="../Grcs/5/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/4/Golgi_98" preSegmentId="0"/>
+            <connection id="21" preFractionAlong="0.5" preCellId="../Grcs/5/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="22" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="23" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="24" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="25" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="26" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="27" preFractionAlong="0.5" preCellId="../Grcs/6/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="28" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="29" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/4/Golgi_98" preSegmentId="0"/>
+            <connection id="30" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="31" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="32" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="33" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="34" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="35" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="36" preFractionAlong="0.5" preCellId="../Grcs/7/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="37" preFractionAlong="0.5" preCellId="../Grcs/8/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="38" preFractionAlong="0.5" preCellId="../Grcs/8/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="39" preFractionAlong="0.5" preCellId="../Grcs/8/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="40" preFractionAlong="0.5" preCellId="../Grcs/9/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="41" preFractionAlong="0.5" preCellId="../Grcs/9/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="42" preFractionAlong="0.5" preCellId="../Grcs/9/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="43" preFractionAlong="0.5" preCellId="../Grcs/10/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="44" preFractionAlong="0.5" preCellId="../Grcs/10/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="45" preFractionAlong="0.5" preCellId="../Grcs/10/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="46" preFractionAlong="0.5" preCellId="../Grcs/10/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="47" preFractionAlong="0.5" preCellId="../Grcs/11/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="48" preFractionAlong="0.5" preCellId="../Grcs/11/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="49" preFractionAlong="0.5" preCellId="../Grcs/11/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="50" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="51" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="52" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="53" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="54" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="55" preFractionAlong="0.5" preCellId="../Grcs/12/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="56" preFractionAlong="0.5" preCellId="../Grcs/13/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="57" preFractionAlong="0.5" preCellId="../Grcs/13/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="58" preFractionAlong="0.5" preCellId="../Grcs/13/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="59" preFractionAlong="0.5" preCellId="../Grcs/14/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="60" preFractionAlong="0.5" preCellId="../Grcs/14/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="61" preFractionAlong="0.5" preCellId="../Grcs/14/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="62" preFractionAlong="0.5" preCellId="../Grcs/14/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="63" preFractionAlong="0.5" preCellId="../Grcs/15/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="64" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="65" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/4/Golgi_98" preSegmentId="0"/>
+            <connection id="66" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="67" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="68" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="69" preFractionAlong="0.5" preCellId="../Grcs/16/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="70" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="71" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="72" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="73" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="74" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="75" preFractionAlong="0.5" preCellId="../Grcs/17/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="76" preFractionAlong="0.5" preCellId="../Grcs/18/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="77" preFractionAlong="0.5" preCellId="../Grcs/18/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="78" preFractionAlong="0.5" preCellId="../Grcs/18/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="79" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="80" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="81" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="82" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="83" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="84" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="85" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="86" preFractionAlong="0.5" preCellId="../Grcs/19/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="87" preFractionAlong="0.5" preCellId="../Grcs/20/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="88" preFractionAlong="0.5" preCellId="../Grcs/20/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="89" preFractionAlong="0.5" preCellId="../Grcs/20/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="90" preFractionAlong="0.5" preCellId="../Grcs/20/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="91" preFractionAlong="0.5" preCellId="../Grcs/20/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="92" preFractionAlong="0.5" preCellId="../Grcs/21/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="93" preFractionAlong="0.5" preCellId="../Grcs/21/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="94" preFractionAlong="0.5" preCellId="../Grcs/21/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="95" preFractionAlong="0.5" preCellId="../Grcs/21/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="96" preFractionAlong="0.5" preCellId="../Grcs/22/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="97" preFractionAlong="0.5" preCellId="../Grcs/22/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="98" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="99" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="100" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="101" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="102" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="103" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="104" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="105" preFractionAlong="0.5" preCellId="../Grcs/23/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="106" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="107" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="108" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="109" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="110" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="111" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="112" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="113" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="114" preFractionAlong="0.5" preCellId="../Grcs/24/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="115" preFractionAlong="0.5" preCellId="../Grcs/26/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="116" preFractionAlong="0.5" preCellId="../Grcs/26/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="117" preFractionAlong="0.5" preCellId="../Grcs/26/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="118" preFractionAlong="0.5" preCellId="../Grcs/27/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="119" preFractionAlong="0.5" preCellId="../Grcs/27/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="120" preFractionAlong="0.5" preCellId="../Grcs/27/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="121" preFractionAlong="0.5" preCellId="../Grcs/28/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/4/Golgi_98" preSegmentId="0"/>
+            <connection id="122" preFractionAlong="0.5" preCellId="../Grcs/28/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="123" preFractionAlong="0.5" preCellId="../Grcs/28/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="124" preFractionAlong="0.5" preCellId="../Grcs/28/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="125" preFractionAlong="0.5" preCellId="../Grcs/28/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="126" preFractionAlong="0.5" preCellId="../Grcs/29/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="127" preFractionAlong="0.5" preCellId="../Grcs/29/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="128" preFractionAlong="0.5" preCellId="../Grcs/30/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="129" preFractionAlong="0.5" preCellId="../Grcs/30/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="130" preFractionAlong="0.5" preCellId="../Grcs/30/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="131" preFractionAlong="0.5" preCellId="../Grcs/30/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="132" preFractionAlong="0.5" preCellId="../Grcs/31/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="133" preFractionAlong="0.5" preCellId="../Grcs/31/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="134" preFractionAlong="0.5" preCellId="../Grcs/31/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="135" preFractionAlong="0.5" preCellId="../Grcs/31/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="136" preFractionAlong="0.5" preCellId="../Grcs/31/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="137" preFractionAlong="0.5" preCellId="../Grcs/32/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="138" preFractionAlong="0.5" preCellId="../Grcs/32/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/17/Golgi_98" preSegmentId="0"/>
+            <connection id="139" preFractionAlong="0.5" preCellId="../Grcs/33/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="140" preFractionAlong="0.5" preCellId="../Grcs/33/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="141" preFractionAlong="0.5" preCellId="../Grcs/33/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/12/Golgi_98" preSegmentId="0"/>
+            <connection id="142" preFractionAlong="0.5" preCellId="../Grcs/33/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/16/Golgi_98" preSegmentId="0"/>
+            <connection id="143" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="144" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="145" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="146" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="147" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="148" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/18/Golgi_98" preSegmentId="0"/>
+            <connection id="149" preFractionAlong="0.5" preCellId="../Grcs/34/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="150" preFractionAlong="0.5" preCellId="../Grcs/35/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="151" preFractionAlong="0.5" preCellId="../Grcs/35/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="152" preFractionAlong="0.5" preCellId="../Grcs/35/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="153" preFractionAlong="0.5" preCellId="../Grcs/35/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+            <connection id="154" preFractionAlong="0.5" preCellId="../Grcs/36/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="155" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="156" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="157" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/7/Golgi_98" preSegmentId="0"/>
+            <connection id="158" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/8/Golgi_98" preSegmentId="0"/>
+            <connection id="159" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/14/Golgi_98" preSegmentId="0"/>
+            <connection id="160" preFractionAlong="0.5" preCellId="../Grcs/37/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/15/Golgi_98" preSegmentId="0"/>
+            <connection id="161" preFractionAlong="0.5" preCellId="../Grcs/38/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/5/Golgi_98" preSegmentId="0"/>
+            <connection id="162" preFractionAlong="0.5" preCellId="../Grcs/38/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/10/Golgi_98" preSegmentId="0"/>
+            <connection id="163" preFractionAlong="0.5" preCellId="../Grcs/38/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/11/Golgi_98" preSegmentId="0"/>
+            <connection id="164" preFractionAlong="0.5" preCellId="../Grcs/39/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/6/Golgi_98" preSegmentId="0"/>
+            <connection id="165" preFractionAlong="0.5" preCellId="../Grcs/39/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/9/Golgi_98" preSegmentId="0"/>
+            <connection id="166" preFractionAlong="0.5" preCellId="../Grcs/39/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/13/Golgi_98" preSegmentId="0"/>
+            <connection id="167" preFractionAlong="0.5" preCellId="../Grcs/39/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/19/Golgi_98" preSegmentId="0"/>
+        </projection>
+        <projection id="net_conn_gol_grc" postsynapticPopulation="Grcs" presynapticPopulation="Golgis" synapse="GABAA">
+            <connection id="0" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/0/Granule_98" preSegmentId="0"/>
+            <connection id="1" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/0/Granule_98" preSegmentId="0"/>
+            <connection id="2" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/1/Granule_98" preSegmentId="0"/>
+            <connection id="3" preFractionAlong="0.5" preCellId="../Golgis/2/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/1/Granule_98" preSegmentId="0"/>
+            <connection id="4" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/1/Granule_98" preSegmentId="0"/>
+            <connection id="5" preFractionAlong="0.5" preCellId="../Golgis/17/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/1/Granule_98" preSegmentId="0"/>
+            <connection id="6" preFractionAlong="0.5" preCellId="../Golgis/11/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/2/Granule_98" preSegmentId="0"/>
+            <connection id="7" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/2/Granule_98" preSegmentId="0"/>
+            <connection id="8" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/3/Granule_98" preSegmentId="0"/>
+            <connection id="9" preFractionAlong="0.5" preCellId="../Golgis/15/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/4/Granule_98" preSegmentId="0"/>
+            <connection id="10" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/5/Granule_98" preSegmentId="0"/>
+            <connection id="11" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/5/Granule_98" preSegmentId="0"/>
+            <connection id="12" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/6/Granule_98" preSegmentId="0"/>
+            <connection id="13" preFractionAlong="0.5" preCellId="../Golgis/14/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/6/Granule_98" preSegmentId="0"/>
+            <connection id="14" preFractionAlong="0.5" preCellId="../Golgis/15/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/6/Granule_98" preSegmentId="0"/>
+            <connection id="15" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/8/Granule_98" preSegmentId="0"/>
+            <connection id="16" preFractionAlong="0.5" preCellId="../Golgis/18/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/8/Granule_98" preSegmentId="0"/>
+            <connection id="17" preFractionAlong="0.5" preCellId="../Golgis/4/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/10/Granule_98" preSegmentId="0"/>
+            <connection id="18" preFractionAlong="0.5" preCellId="../Golgis/8/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/10/Granule_98" preSegmentId="0"/>
+            <connection id="19" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/10/Granule_98" preSegmentId="0"/>
+            <connection id="20" preFractionAlong="0.5" preCellId="../Golgis/5/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/11/Granule_98" preSegmentId="0"/>
+            <connection id="21" preFractionAlong="0.5" preCellId="../Golgis/17/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/11/Granule_98" preSegmentId="0"/>
+            <connection id="22" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/12/Granule_98" preSegmentId="0"/>
+            <connection id="23" preFractionAlong="0.5" preCellId="../Golgis/16/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/12/Granule_98" preSegmentId="0"/>
+            <connection id="24" preFractionAlong="0.5" preCellId="../Golgis/18/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/12/Granule_98" preSegmentId="0"/>
+            <connection id="25" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/12/Granule_98" preSegmentId="0"/>
+            <connection id="26" preFractionAlong="0.5" preCellId="../Golgis/2/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/13/Granule_98" preSegmentId="0"/>
+            <connection id="27" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/13/Granule_98" preSegmentId="0"/>
+            <connection id="28" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/14/Granule_98" preSegmentId="0"/>
+            <connection id="29" preFractionAlong="0.5" preCellId="../Golgis/18/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/15/Granule_98" preSegmentId="0"/>
+            <connection id="30" preFractionAlong="0.5" preCellId="../Golgis/5/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/16/Granule_98" preSegmentId="0"/>
+            <connection id="31" preFractionAlong="0.5" preCellId="../Golgis/11/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/16/Granule_98" preSegmentId="0"/>
+            <connection id="32" preFractionAlong="0.5" preCellId="../Golgis/10/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/17/Granule_98" preSegmentId="0"/>
+            <connection id="33" preFractionAlong="0.5" preCellId="../Golgis/4/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/18/Granule_98" preSegmentId="0"/>
+            <connection id="34" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/18/Granule_98" preSegmentId="0"/>
+            <connection id="35" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/19/Granule_98" preSegmentId="0"/>
+            <connection id="36" preFractionAlong="0.5" preCellId="../Golgis/4/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/19/Granule_98" preSegmentId="0"/>
+            <connection id="37" preFractionAlong="0.5" preCellId="../Golgis/10/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/19/Granule_98" preSegmentId="0"/>
+            <connection id="38" preFractionAlong="0.5" preCellId="../Golgis/18/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/19/Granule_98" preSegmentId="0"/>
+            <connection id="39" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/20/Granule_98" preSegmentId="0"/>
+            <connection id="40" preFractionAlong="0.5" preCellId="../Golgis/4/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/20/Granule_98" preSegmentId="0"/>
+            <connection id="41" preFractionAlong="0.5" preCellId="../Golgis/9/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/20/Granule_98" preSegmentId="0"/>
+            <connection id="42" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/20/Granule_98" preSegmentId="0"/>
+            <connection id="43" preFractionAlong="0.5" preCellId="../Golgis/7/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/21/Granule_98" preSegmentId="0"/>
+            <connection id="44" preFractionAlong="0.5" preCellId="../Golgis/11/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/23/Granule_98" preSegmentId="0"/>
+            <connection id="45" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/23/Granule_98" preSegmentId="0"/>
+            <connection id="46" preFractionAlong="0.5" preCellId="../Golgis/16/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/23/Granule_98" preSegmentId="0"/>
+            <connection id="47" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/24/Granule_98" preSegmentId="0"/>
+            <connection id="48" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/24/Granule_98" preSegmentId="0"/>
+            <connection id="49" preFractionAlong="0.5" preCellId="../Golgis/11/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/24/Granule_98" preSegmentId="0"/>
+            <connection id="50" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/24/Granule_98" preSegmentId="0"/>
+            <connection id="51" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/25/Granule_98" preSegmentId="0"/>
+            <connection id="52" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/25/Granule_98" preSegmentId="0"/>
+            <connection id="53" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/25/Granule_98" preSegmentId="0"/>
+            <connection id="54" preFractionAlong="0.5" preCellId="../Golgis/16/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/25/Granule_98" preSegmentId="0"/>
+            <connection id="55" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/26/Granule_98" preSegmentId="0"/>
+            <connection id="56" preFractionAlong="0.5" preCellId="../Golgis/14/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/26/Granule_98" preSegmentId="0"/>
+            <connection id="57" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/26/Granule_98" preSegmentId="0"/>
+            <connection id="58" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/27/Granule_98" preSegmentId="0"/>
+            <connection id="59" preFractionAlong="0.5" preCellId="../Golgis/7/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/27/Granule_98" preSegmentId="0"/>
+            <connection id="60" preFractionAlong="0.5" preCellId="../Golgis/5/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/28/Granule_98" preSegmentId="0"/>
+            <connection id="61" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/28/Granule_98" preSegmentId="0"/>
+            <connection id="62" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/29/Granule_98" preSegmentId="0"/>
+            <connection id="63" preFractionAlong="0.5" preCellId="../Golgis/12/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/29/Granule_98" preSegmentId="0"/>
+            <connection id="64" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/29/Granule_98" preSegmentId="0"/>
+            <connection id="65" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/30/Granule_98" preSegmentId="0"/>
+            <connection id="66" preFractionAlong="0.5" preCellId="../Golgis/5/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/30/Granule_98" preSegmentId="0"/>
+            <connection id="67" preFractionAlong="0.5" preCellId="../Golgis/4/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/31/Granule_98" preSegmentId="0"/>
+            <connection id="68" preFractionAlong="0.5" preCellId="../Golgis/11/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/32/Granule_98" preSegmentId="0"/>
+            <connection id="69" preFractionAlong="0.5" preCellId="../Golgis/15/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/32/Granule_98" preSegmentId="0"/>
+            <connection id="70" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/33/Granule_98" preSegmentId="0"/>
+            <connection id="71" preFractionAlong="0.5" preCellId="../Golgis/5/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/33/Granule_98" preSegmentId="0"/>
+            <connection id="72" preFractionAlong="0.5" preCellId="../Golgis/6/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/33/Granule_98" preSegmentId="0"/>
+            <connection id="73" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/35/Granule_98" preSegmentId="0"/>
+            <connection id="74" preFractionAlong="0.5" preCellId="../Golgis/19/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/35/Granule_98" preSegmentId="0"/>
+            <connection id="75" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/36/Granule_98" preSegmentId="0"/>
+            <connection id="76" preFractionAlong="0.5" preCellId="../Golgis/10/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/36/Granule_98" preSegmentId="0"/>
+            <connection id="77" preFractionAlong="0.5" preCellId="../Golgis/17/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/36/Granule_98" preSegmentId="0"/>
+            <connection id="78" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/37/Granule_98" preSegmentId="0"/>
+            <connection id="79" preFractionAlong="0.5" preCellId="../Golgis/2/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/38/Granule_98" preSegmentId="0"/>
+            <connection id="80" preFractionAlong="0.5" preCellId="../Golgis/13/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/38/Granule_98" preSegmentId="0"/>
+            <connection id="81" preFractionAlong="0.5" preCellId="../Golgis/17/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/38/Granule_98" preSegmentId="0"/>
+            <connection id="82" preFractionAlong="0.5" preCellId="../Golgis/15/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grcs/39/Granule_98" preSegmentId="0"/>
+        </projection>
     </network>
 </neuroml>

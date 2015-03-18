@@ -84,7 +84,6 @@ for i in range(0, numCells_gol) :
     
 
 
-
 proj_grc_gol = Projection(id=net_conn_grc_gol, presynaptic_population=grc_group, postsynaptic_population=gol_group, synapse=grc_gol_syn)
 net.projections.append(proj_grc_gol)
 proj_gol_grc = Projection(id=net_conn_gol_grc, presynaptic_population=gol_group, postsynaptic_population=grc_group, synapse=gol_grc_syn)
@@ -94,8 +93,6 @@ count_grc_gol = 0
 count_gol_grc = 0
 
 # Generate exc -> *  connections
-
-
 
 
 def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_id, post_pop, post_component, post_cell_id, post_seg_id):
