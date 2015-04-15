@@ -31,12 +31,12 @@ nml_doc.includes.append(IncludeType(href='%s.cell.nml'%grc_group_component))
 nml_doc.includes.append(IncludeType(href='%s.cell.nml'%gol_group_component))
 
 # The names of the Exc & Inh groups/populations (Cell Group in neuroConstruct)
-grc_group = "Grcs" 
+grc_group = "Grans" 
 gol_group = "Golgis" 
 
 # The names of the network connections 
-net_conn_grc_gol = "net_conn_grc_gol"
-net_conn_gol_grc = "net_conn_gol_grc"
+net_conn_grc_gol = "NetConn_Grans_Golgis"
+net_conn_gol_grc = "NetConn_Golgis_Grans"
 
 # The names of the synapse types (should match names at Cell Mechanism/Network tabs in neuroConstruct)
 grc_gol_syn = "AMPA_GranGol"
