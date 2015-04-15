@@ -62,40 +62,22 @@
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>1.79811E-7</float>
-     </void>
-     <void property="name">
-      <string>Gran_KCa_98</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>3.30033E-10</float>
-     </void>
-     <void property="name">
-      <string>GranPassiveCond</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
       <float>3.0905062E-10</float>
      </void>
      <void property="name">
       <string>Gran_H_98</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="name">
+      <string>Gran_CaPool_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -111,18 +93,6 @@
      </void>
      <void property="name">
       <string>Gran_KA_98</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="name">
-      <string>Gran_CaPool_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -149,6 +119,36 @@
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
+      <float>9.084216E-9</float>
+     </void>
+     <void property="name">
+      <string>Gran_CaHVA_98</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>3.30033E-10</float>
+     </void>
+     <void property="name">
+      <string>GranPassiveCond</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
       <float>8.89691E-8</float>
      </void>
      <void property="name">
@@ -164,10 +164,10 @@
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>9.084216E-9</float>
+      <float>1.79811E-7</float>
      </void>
      <void property="name">
-      <string>Gran_CaHVA_98</string>
+      <string>Gran_KCa_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -213,14 +213,11 @@
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
-     <void property="externalConcentration">
-      <float>2.4E-18</float>
-     </void>
-     <void property="internalConcentration">
-      <float>7.55E-23</float>
-     </void>
      <void property="name">
-      <string>ca</string>
+      <string>na</string>
+     </void>
+     <void property="reversalPotential">
+      <float>55.0</float>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -231,11 +228,14 @@
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
-     <void property="name">
-      <string>na</string>
+     <void property="externalConcentration">
+      <float>2.4E-18</float>
      </void>
-     <void property="reversalPotential">
-      <float>55.0</float>
+     <void property="internalConcentration">
+      <float>7.55E-23</float>
+     </void>
+     <void property="name">
+      <string>ca</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -260,7 +260,7 @@
   </void>
   <void property="synapsesVsGroups">
    <void method="put">
-    <string>NMDA</string>
+    <string>MF_AMPA</string>
     <object class="java.util.Vector">
      <void method="add">
       <string>all</string>
@@ -268,7 +268,7 @@
     </object>
    </void>
    <void method="put">
-    <string>MF_AMPA</string>
+    <string>NMDA</string>
     <object class="java.util.Vector">
      <void method="add">
       <string>all</string>

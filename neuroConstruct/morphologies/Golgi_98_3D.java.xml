@@ -217,21 +217,6 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>3.3E-10</float>
-     </void>
-     <void property="name">
-      <string>GolgiPassiveCond</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
       <float>1.71496E-9</float>
      </void>
      <void property="name">
@@ -241,6 +226,36 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
     <object class="java.util.Vector">
      <void method="add">
       <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>5.24928E-9</float>
+     </void>
+     <void property="name">
+      <string>Golgi_KA_CML</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>6.78839E-8</float>
+     </void>
+     <void property="name">
+      <string>Golgi_KDr_CML</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
      </void>
     </object>
    </void>
@@ -262,15 +277,15 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>5.24928E-9</float>
+      <float>3.3E-10</float>
      </void>
      <void property="name">
-      <string>Golgi_KA_CML</string>
+      <string>GolgiPassiveCond</string>
      </void>
     </object>
     <object class="java.util.Vector">
      <void method="add">
-      <string>soma_group</string>
+      <string>all</string>
      </void>
     </object>
    </void>
@@ -298,21 +313,6 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
     <object class="java.util.Vector">
      <void method="add">
       <string>soma_group</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>6.78839E-8</float>
-     </void>
-     <void property="name">
-      <string>Golgi_KDr_CML</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
      </void>
     </object>
    </void>
@@ -386,21 +386,6 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
-     <void property="name">
-      <string>na</string>
-     </void>
-     <void property="reversalPotential">
-      <float>55.0</float>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
      <void property="externalConcentration">
       <float>2.4E-18</float>
      </void>
@@ -414,6 +399,21 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
     <object class="java.util.Vector">
      <void method="add">
       <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
+     <void property="name">
+      <string>na</string>
+     </void>
+     <void property="reversalPotential">
+      <float>55.0</float>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
      </void>
     </object>
    </void>
