@@ -1,0 +1,63 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="GCL_200x30x200_4grc_4gol">
+    <include href="Granule_98.cell.nml"></include>
+    <include href="Golgi_98.cell.nml"></include>
+    <include href="AMPA_GranGol.synapse.nml"></include>
+    <include href="GABAA.synapse.nml"></include>
+    <network id="GCL_200x30x200_4grc_4gol" type="networkWithTemperature" temperature="32.0 degC">
+        <notes>Network generated using libNeuroML v0.2.6</notes>
+        <population id="Grans" component="Granule_98" type="populationList" size="4">
+            <instance id="0">
+                <location y="13.2219779753" x="193.290707137999988" z="1.49829401172"/>
+            </instance>
+            <instance id="1">
+                <location y="28.178069920900001" x="182.195192490000011" z="116.445514611999997"/>
+            </instance>
+            <instance id="2">
+                <location y="2.51814680511" x="134.312696297999992" z="153.296186557999988"/>
+            </instance>
+            <instance id="3">
+                <location y="0.924420651798" x="47.361955072599997" z="157.754543447000003"/>
+            </instance>
+        </population>
+        <population id="Golgis" component="Golgi_98" type="populationList" size="4">
+            <instance id="0">
+                <location y="18.698444251200002" x="69.2177931194" z="123.163139021000006"/>
+            </instance>
+            <instance id="1">
+                <location y="5.4927194223" x="29.710927741700001" z="22.882593937700001"/>
+            </instance>
+            <instance id="2">
+                <location y="14.602546218100001" x="2.92375609738" z="192.980312182999995"/>
+            </instance>
+            <instance id="3">
+                <location y="16.2326455665" x="12.912456195400001" z="93.179711801699995"/>
+            </instance>
+        </population>
+        <projection id="NetConn_Grans_Golgis" postsynapticPopulation="Golgis" presynapticPopulation="Grans" synapse="AMPA_GranGol">
+            <connection id="0" preFractionAlong="0.5" preCellId="../Grans/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="1" preFractionAlong="0.5" preCellId="../Grans/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="2" preFractionAlong="0.5" preCellId="../Grans/0/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="3" preFractionAlong="0.5" preCellId="../Grans/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="4" preFractionAlong="0.5" preCellId="../Grans/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+            <connection id="5" preFractionAlong="0.5" preCellId="../Grans/1/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="6" preFractionAlong="0.5" preCellId="../Grans/2/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="7" preFractionAlong="0.5" preCellId="../Grans/2/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="8" preFractionAlong="0.5" preCellId="../Grans/2/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/3/Golgi_98" preSegmentId="0"/>
+            <connection id="9" preFractionAlong="0.5" preCellId="../Grans/3/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/0/Golgi_98" preSegmentId="0"/>
+            <connection id="10" preFractionAlong="0.5" preCellId="../Grans/3/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/1/Golgi_98" preSegmentId="0"/>
+            <connection id="11" preFractionAlong="0.5" preCellId="../Grans/3/Granule_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Golgis/2/Golgi_98" preSegmentId="0"/>
+        </projection>
+        <projection id="NetConn_Golgis_Grans" postsynapticPopulation="Grans" presynapticPopulation="Golgis" synapse="GABAA">
+            <connection id="0" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/0/Granule_98" preSegmentId="0"/>
+            <connection id="1" preFractionAlong="0.5" preCellId="../Golgis/2/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/0/Granule_98" preSegmentId="0"/>
+            <connection id="2" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/0/Granule_98" preSegmentId="0"/>
+            <connection id="3" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/1/Granule_98" preSegmentId="0"/>
+            <connection id="5" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/1/Granule_98" preSegmentId="0"/>
+            <connection id="6" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/2/Granule_98" preSegmentId="0"/>
+            <connection id="7" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/2/Granule_98" preSegmentId="0"/>
+            <connection id="8" preFractionAlong="0.5" preCellId="../Golgis/3/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/2/Granule_98" preSegmentId="0"/>
+            <connection id="9" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/3/Granule_98" preSegmentId="0"/>
+            <connection id="10" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/3/Granule_98" preSegmentId="0"/>
+        </projection>
+    </network>
+</neuroml>

@@ -10,3 +10,8 @@ generatedPSICS
 simulations
 *.bak
 *py.class
+
+NeuroML2/*.mod
+NeuroML2/*.hoc
+NeuroML2/*.dat
+NeuroML2/*nrn.py

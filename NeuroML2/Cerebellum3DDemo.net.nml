@@ -3,7 +3,7 @@
     <include href="Golgi_98.cell.nml"></include>
     <include href="AMPA_GranGol.synapse.nml"></include>
     <include href="GABAA.synapse.nml"></include>
-    <network id="Cerebellum3DDemo">
+    <network id="Cerebellum3DDemo" type="networkWithTemperature" temperature="32.0 degC">
         <notes>Network generated using libNeuroML v0.2.6</notes>
         <population id="Grans" component="Granule_98" type="populationList" size="40">
             <instance id="0">
