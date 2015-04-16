@@ -11,10 +11,12 @@ from neuroml import Projection
 from neuroml import Connection
 from neuroml import IncludeType
 
-import math
-from random import random
 
 import neuroml.writers as writers
+
+from random import random
+from random import seed
+seed(1234)
 
 network_id = "Cerebellum3DDemo"
 
