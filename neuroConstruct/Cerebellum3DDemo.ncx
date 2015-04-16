@@ -2020,6 +2020,34 @@ Note that the plots associated with these simulations slow the simulation down a
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Mossies</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>Mossies_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Mossies_v_1</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties"/>
@@ -2132,7 +2160,7 @@ Note that the plots associated with these simulations slow the simulation down a
    <float>700.0</float>
   </void>
   <void property="reference">
-   <string>Sim_626</string>
+   <string>Sim_635</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -2726,6 +2754,39 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
      </void>
      <void property="simDuration">
       <float>700.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>Mossies</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_0</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>MossiesOnly</string>
+     </void>
+     <void property="netConns">
+      <void method="add">
+       <string>NetConn_Mossies_Grans</string>
+      </void>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>Mossies_v_1</string>
+      </void>
+      <void method="add">
+       <string>Plot_0</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>100.0</float>
      </void>
     </object>
    </void>

@@ -217,6 +217,51 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
+      <float>3.3E-10</float>
+     </void>
+     <void property="name">
+      <string>GolgiPassiveCond</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>all</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>5.71654E-9</float>
+     </void>
+     <void property="name">
+      <string>Golgi_KCa_CML</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>8.31757E-9</float>
+     </void>
+     <void property="name">
+      <string>Golgi_CaHVA_CML</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
       <float>1.71496E-9</float>
      </void>
      <void property="name">
@@ -247,51 +292,6 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>6.78839E-8</float>
-     </void>
-     <void property="name">
-      <string>Golgi_KDr_CML</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>8.31757E-9</float>
-     </void>
-     <void property="name">
-      <string>Golgi_CaHVA_CML</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>soma_group</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>3.3E-10</float>
-     </void>
-     <void property="name">
-      <string>GolgiPassiveCond</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>all</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
       <float>4.00158E-7</float>
      </void>
      <void property="name">
@@ -306,23 +306,23 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>6.78839E-8</float>
+     </void>
      <void property="name">
-      <string>Golgi_CaPool_CML</string>
+      <string>Golgi_KDr_CML</string>
      </void>
     </object>
     <object class="java.util.Vector">
      <void method="add">
-      <string>soma_group</string>
+      <string>all</string>
      </void>
     </object>
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>5.71654E-9</float>
-     </void>
      <void property="name">
-      <string>Golgi_KCa_CML</string>
+      <string>Golgi_CaPool_CML</string>
      </void>
     </object>
     <object class="java.util.Vector">
