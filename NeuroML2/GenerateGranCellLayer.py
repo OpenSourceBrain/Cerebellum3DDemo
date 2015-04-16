@@ -35,6 +35,7 @@ def generate_granule_cell_layer(network_id,
                                 connection_probability_gol_grc =   0.1,
                                 inputs = False,
                                 input_firing_rate = 50, # Hz
+                                num_inputs_per_grc = 4,
                                 validate = True,
                                 random_seed = 1234,
                                 generate_lems_simulation = False,
@@ -156,11 +157,16 @@ def generate_granule_cell_layer(network_id,
                              component=rand_spiker_id,
                              populations=grc_group)
                              
+        count = 0
         for i in range(0, numCells_grc):
-            input = Input(id=i, 
-                          target="../%s[%i]"%(grc_group, i), 
-                          destination="synapses")  
-            input_list.input.append(input)
+            
+            for j in range(num_inputs_per_grc):
+                input = Input(id=count, 
+                              target="../%s/%i/%s"%(grc_group, i, grc_group_component), 
+                              destination="synapses")  
+                input_list.input.append(input)
+            
+            count += 1
                              
         net.input_lists.append(input_list)
 
@@ -210,12 +216,12 @@ def generate_granule_cell_layer(network_id,
 
         for i in range(numCells_grc):
             quantity = "%s/%i/%s/v"%(grc_group, i, grc_group_component)
-            ls.add_line_to_display(disp_grc, "GrC %i: Vm"%i, quantity, "1mV", "#66c2a5")
+            ls.add_line_to_display(disp_grc, "GrC %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
             ls.add_column_to_output_file(of_grc, "v_%i"%i, quantity)
             
         for i in range(numCells_gol):
             quantity = "%s/%i/%s/v"%(gol_group, i, gol_group_component)
-            ls.add_line_to_display(disp_gol, "Golgi %i: Vm"%i, quantity, "1mV", "#6aafff")
+            ls.add_line_to_display(disp_gol, "Golgi %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
             ls.add_column_to_output_file(of_gol, "v_%i"%i, quantity)
 
         # Save to LEMS XML file
@@ -252,7 +258,9 @@ if __name__ == "__main__":
                                 connections = True,
                                 connection_probability_grc_gol =   0.75,
                                 connection_probability_gol_grc =   0.75,
-                                inputs = False,
+                                inputs = True,
+                                num_inputs_per_grc = 12,
+                                input_firing_rate = 150, # Hz
                                 generate_lems_simulation = True,
                                 duration = 100,
                                 dt = 0.01)

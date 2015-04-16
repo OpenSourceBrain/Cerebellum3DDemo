@@ -37,21 +37,22 @@
     <Include file="Golgi_98.cell.nml"/>
     <Include file="AMPA_GranGol.synapse.nml"/>
     <Include file="GABAA.synapse.nml"/>
+    <Include file="MF_AMPA.synapse.nml"/>
    
     <Simulation id="Sim_GCL_200x30x200_4grc_4gol" length="100ms" step="0.01ms" target="GCL_200x30x200_4grc_4gol">
         
         <Display id="display_grc" title="Voltages Granule cells" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-95" ymax="-38">
-            <Line id="GrC 0: Vm" quantity="Grans/0/Granule_98/v" scale="1mV" color="#66c2a5" timeScale="1ms"/>
-            <Line id="GrC 1: Vm" quantity="Grans/1/Granule_98/v" scale="1mV" color="#66c2a5" timeScale="1ms"/>
-            <Line id="GrC 2: Vm" quantity="Grans/2/Granule_98/v" scale="1mV" color="#66c2a5" timeScale="1ms"/>
-            <Line id="GrC 3: Vm" quantity="Grans/3/Granule_98/v" scale="1mV" color="#66c2a5" timeScale="1ms"/>
+            <Line id="GrC 0: Vm" quantity="Grans/0/Granule_98/v" scale="1mV" color="#c55ef1" timeScale="1ms"/>
+            <Line id="GrC 1: Vm" quantity="Grans/1/Granule_98/v" scale="1mV" color="#f4f991" timeScale="1ms"/>
+            <Line id="GrC 2: Vm" quantity="Grans/2/Granule_98/v" scale="1mV" color="#242780" timeScale="1ms"/>
+            <Line id="GrC 3: Vm" quantity="Grans/3/Granule_98/v" scale="1mV" color="#4e2e37" timeScale="1ms"/>
         </Display>
         
         <Display id="display_gol" title="Voltages Golgi cells" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-95" ymax="-38">
-            <Line id="Golgi 0: Vm" quantity="Golgis/0/Golgi_98/v" scale="1mV" color="#6aafff" timeScale="1ms"/>
-            <Line id="Golgi 1: Vm" quantity="Golgis/1/Golgi_98/v" scale="1mV" color="#6aafff" timeScale="1ms"/>
-            <Line id="Golgi 2: Vm" quantity="Golgis/2/Golgi_98/v" scale="1mV" color="#6aafff" timeScale="1ms"/>
-            <Line id="Golgi 3: Vm" quantity="Golgis/3/Golgi_98/v" scale="1mV" color="#6aafff" timeScale="1ms"/>
+            <Line id="Golgi 0: Vm" quantity="Golgis/0/Golgi_98/v" scale="1mV" color="#0a228b" timeScale="1ms"/>
+            <Line id="Golgi 1: Vm" quantity="Golgis/1/Golgi_98/v" scale="1mV" color="#46db4b" timeScale="1ms"/>
+            <Line id="Golgi 2: Vm" quantity="Golgis/2/Golgi_98/v" scale="1mV" color="#ce779a" timeScale="1ms"/>
+            <Line id="Golgi 3: Vm" quantity="Golgis/3/Golgi_98/v" scale="1mV" color="#2d665a" timeScale="1ms"/>
         </Display>
         
         <OutputFile id="Volts_file_grc" fileName="v_grc.dat">

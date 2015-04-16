@@ -3,6 +3,8 @@
     <include href="Golgi_98.cell.nml"></include>
     <include href="AMPA_GranGol.synapse.nml"></include>
     <include href="GABAA.synapse.nml"></include>
+    <include href="MF_AMPA.synapse.nml"></include>
+    <poissonFiringSynapse id="input50Hz" synapse="MF_AMPA" averageRate="150 per_s" spikeTarget="./MF_AMPA"/>
     <network id="GCL_200x30x200_4grc_4gol" type="networkWithTemperature" temperature="32.0 degC">
         <notes>Network generated using libNeuroML v0.2.6</notes>
         <population id="Grans" component="Granule_98" type="populationList" size="4">
@@ -59,5 +61,55 @@
             <connection id="9" preFractionAlong="0.5" preCellId="../Golgis/0/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/3/Granule_98" preSegmentId="0"/>
             <connection id="10" preFractionAlong="0.5" preCellId="../Golgis/1/Golgi_98" postFractionAlong="0.5" postSegmentId="0" postCellId="../Grans/3/Granule_98" preSegmentId="0"/>
         </projection>
+        <inputList id="Input_0" component="input50Hz" population="Grans">
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="0" target="../Grans/0/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="1" target="../Grans/1/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="2" target="../Grans/2/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+            <input destination="synapses" id="3" target="../Grans/3/Granule_98"/>
+        </inputList>
     </network>
 </neuroml>
