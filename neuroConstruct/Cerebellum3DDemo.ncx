@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_75" class="java.beans.XMLDecoder">
+<java version="1.7.0_79" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -25,8 +25,8 @@ Note that the plots associated with these simulations slow the simulation down a
    <string>Cerebellum3DDemo</string>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.RegionsInfo">
-  <void property="internalData">
+ <object class="ucl.physiol.neuroconstruct.project.RegionsInfo" id="RegionsInfo0">
+  <void id="Hashtable0" property="internalData">
    <void method="get">
     <string>Name</string>
     <void method="add">
@@ -119,8 +119,8 @@ Note that the plots associated with these simulations slow the simulation down a
    <void method="get">
     <string>Description</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox0">
+      <void id="InternalParameterArray0" property="parameterList">
        <void id="InternalParameter0" index="3">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -152,8 +152,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox1">
+      <void id="InternalParameterArray1" property="parameterList">
        <void id="InternalParameter3" index="1">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -194,8 +194,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox2">
+      <void id="InternalParameterArray2" property="parameterList">
        <void id="InternalParameter7" index="1">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -236,8 +236,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox3">
+      <void id="InternalParameterArray3" property="parameterList">
        <void id="InternalParameter11" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -287,8 +287,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox4">
+      <void id="InternalParameterArray4" property="parameterList">
        <void id="InternalParameter16" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -338,8 +338,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox5">
+      <void id="InternalParameterArray5" property="parameterList">
        <void id="InternalParameter21" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -389,8 +389,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox6">
+      <void id="InternalParameterArray6" property="parameterList">
        <void id="InternalParameter26" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -440,8 +440,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox" id="RectangularBox7">
+      <void id="InternalParameterArray7" property="parameterList">
        <void id="InternalParameter31" index="3">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -475,13 +475,13 @@ Note that the plots associated with these simulations slow the simulation down a
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.CellGroupsInfo">
-  <void property="internalData">
+ <object class="ucl.physiol.neuroconstruct.project.CellGroupsInfo" id="CellGroupsInfo0">
+  <void id="Hashtable1" property="internalData">
    <void method="get">
     <string>Cell Packing Adapter</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter" id="OneDimRegSpacingPackingAdapter0">
+      <void id="InternalParameterArray8" property="parameterList">
        <void id="InternalParameter34" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -504,8 +504,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter" id="OneDimRegSpacingPackingAdapter1">
+      <void id="InternalParameterArray9" property="parameterList">
        <void id="InternalParameter36" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -528,8 +528,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter" id="OneDimRegSpacingPackingAdapter2">
+      <void id="InternalParameterArray10" property="parameterList">
        <void id="InternalParameter38" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -552,11 +552,11 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter" id="RandomCellPackingAdapter0">
       <void property="maxNumberCells">
        <int>12</int>
       </void>
-      <void property="parameterList">
+      <void id="InternalParameterArray11" property="parameterList">
        <void id="InternalParameter40" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -570,11 +570,11 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter" id="RandomCellPackingAdapter1">
       <void property="maxNumberCells">
        <int>75</int>
       </void>
-      <void property="parameterList">
+      <void id="InternalParameterArray12" property="parameterList">
        <void id="InternalParameter41" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -588,11 +588,11 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter" id="RandomCellPackingAdapter2">
       <void property="maxNumberCells">
        <int>4</int>
       </void>
-      <void property="parameterList">
+      <void id="InternalParameterArray13" property="parameterList">
        <void id="InternalParameter42" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -654,8 +654,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter0">
+      <void id="InternalParameterArray14" property="parameterList">
        <void id="InternalParameter43" index="1">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -669,8 +669,8 @@ Note that the plots associated with these simulations slow the simulation down a
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
-      <void property="parameterList">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter" id="SinglePositionedCellPackingAdapter1">
+      <void id="InternalParameterArray15" property="parameterList">
        <void id="InternalParameter44" index="0">
         <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
          <string>value</string>
@@ -1030,7 +1030,7 @@ Note that the plots associated with these simulations slow the simulation down a
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.SimPlotInfo">
+ <object class="ucl.physiol.neuroconstruct.project.SimPlotInfo" id="SimPlotInfo0">
   <void property="allSimPlots">
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
@@ -2087,7 +2087,7 @@ Note that the plots associated with these simulations slow the simulation down a
    <boolean>false</boolean>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings">
+ <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings" id="NeuronSettings0">
   <void property="copySimFiles">
    <boolean>true</boolean>
   </void>
@@ -2104,11 +2104,11 @@ Note that the plots associated with these simulations slow the simulation down a
     <string></string>
    </void>
    <void method="put">
-    <float>-1.0</float>
+    <float>1.0</float>
     <string></string>
    </void>
    <void method="put">
-    <float>1.0</float>
+    <float>-1.0</float>
     <string></string>
    </void>
    <void method="put">
@@ -2121,7 +2121,7 @@ Note that the plots associated with these simulations slow the simulation down a
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings">
+ <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings" id="GenesisSettings0">
   <void property="nativeBlocks">
    <void method="put">
     <int>10</int>
@@ -2136,11 +2136,11 @@ Note that the plots associated with these simulations slow the simulation down a
     <string></string>
    </void>
    <void method="put">
-    <int>-1</int>
+    <int>1</int>
     <string></string>
    </void>
    <void method="put">
-    <int>1</int>
+    <int>-1</int>
     <string></string>
    </void>
   </void>
@@ -2172,7 +2172,7 @@ Note that the plots associated with these simulations slow the simulation down a
    <int>2</int>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.ElecInputInfo">
+ <object class="ucl.physiol.neuroconstruct.project.ElecInputInfo" id="ElecInputInfo0">
   <void property="allStims">
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.simulation.RandomSpikeTrainSettings">
@@ -2256,7 +2256,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings0">
      <void property="amp">
       <void property="fixedNum">
        <float>0.01</float>
@@ -2288,7 +2288,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings1">
      <void property="amp">
       <void property="fixedNum">
        <float>0.02</float>
@@ -2347,7 +2347,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings2">
      <void property="amp">
       <void property="fixedNum">
        <float>0.2</float>
@@ -2379,7 +2379,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings" id="IClampSettings3">
      <void property="amp">
       <void property="fixedNum">
        <float>-0.2</float>
@@ -2412,10 +2412,10 @@ Note that the plots associated with these simulations slow the simulation down a
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo">
+ <object class="ucl.physiol.neuroconstruct.project.SimConfigInfo" id="SimConfigInfo0">
   <void property="allSimConfigs">
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig0">
      <void property="cellGroups">
       <void method="add">
        <string>Golgis</string>
@@ -2469,7 +2469,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig1">
      <void property="cellGroups">
       <void method="add">
        <string>GoC_3D_Small</string>
@@ -2526,7 +2526,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig2">
      <void property="cellGroups">
       <void method="add">
        <string>GoC_3D</string>
@@ -2583,7 +2583,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig3">
      <void property="cellGroups">
       <void method="add">
        <string>SingleGranule</string>
@@ -2614,7 +2614,7 @@ Note that the plots associated with these simulations slow the simulation down a
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig4">
      <void property="cellGroups">
       <void method="add">
        <string>SingleGolgi</string>
@@ -2650,7 +2650,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig5">
      <void property="cellGroups">
       <void method="add">
        <string>TestScalingGoC</string>
@@ -2701,7 +2701,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig6">
      <void property="cellGroups">
       <void method="add">
        <string>SingleGolgi</string>
@@ -2732,7 +2732,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig7">
      <void property="cellGroups">
       <void method="add">
        <string>TestCell1</string>
@@ -2758,7 +2758,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
     </object>
    </void>
    <void method="add">
-    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig" id="SimConfig8">
      <void property="cellGroups">
       <void method="add">
        <string>Mossies</string>
@@ -2792,8 +2792,8 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.SimpleNetworkConnectionsInfo">
-  <void property="internalData">
+ <object class="ucl.physiol.neuroconstruct.project.SimpleNetworkConnectionsInfo" id="SimpleNetworkConnectionsInfo0">
+  <void id="Hashtable2" property="internalData">
    <void method="get">
     <string>Name</string>
     <void method="add">
@@ -3938,7 +3938,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
    <void method="get">
     <string>Connectivity Conditions</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions0">
       <void property="generationDirection">
        <int>1</int>
       </void>
@@ -3963,7 +3963,34 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions1">
+      <void property="numConnsInitiatingCellGroup">
+       <void property="fixedNum">
+        <float>4.0</float>
+       </void>
+      </void>
+      <void property="onlyConnectToUniqueCells">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions2">
+      <void property="generationDirection">
+       <int>1</int>
+      </void>
+      <void property="numConnsInitiatingCellGroup">
+       <void property="fixedNum">
+        <float>4.0</float>
+       </void>
+      </void>
+      <void property="onlyConnectToUniqueCells">
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions3">
       <void property="numConnsInitiatingCellGroup">
        <void property="fixedNum">
         <float>4.0</float>
@@ -3979,40 +4006,13 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
       <void property="generationDirection">
        <int>1</int>
       </void>
-      <void property="numConnsInitiatingCellGroup">
-       <void property="fixedNum">
-        <float>4.0</float>
-       </void>
-      </void>
       <void property="onlyConnectToUniqueCells">
        <boolean>true</boolean>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
-      <void property="numConnsInitiatingCellGroup">
-       <void property="fixedNum">
-        <float>4.0</float>
-       </void>
-      </void>
-      <void property="onlyConnectToUniqueCells">
-       <boolean>true</boolean>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
-      <void property="generationDirection">
-       <int>1</int>
-      </void>
-      <void property="onlyConnectToUniqueCells">
-       <boolean>true</boolean>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions4">
       <void property="generationDirection">
        <int>1</int>
       </void>
@@ -4043,7 +4043,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions5">
       <void property="numConnsInitiatingCellGroup">
        <void property="fixedNum">
         <float>4.0</float>
@@ -4065,7 +4065,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions6">
       <void property="allowAutapses">
        <boolean>false</boolean>
       </void>
@@ -4080,7 +4080,7 @@ Note: the granule cell model&apos;s Ca reversal potential is fixed at 80mV due t
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions" id="ConnectivityConditions7">
       <void property="allowAutapses">
        <boolean>false</boolean>
       </void>

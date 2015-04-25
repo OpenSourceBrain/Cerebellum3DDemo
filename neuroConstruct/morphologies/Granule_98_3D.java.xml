@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_75" class="java.beans.XMLDecoder">
+<java version="1.7.0_79" class="java.beans.XMLDecoder">
 
 <!-- Note that this XML is specific to the neuroConstruct Java cell object model and not any part of the NeuroML framework -->
 
- <object class="ucl.physiol.neuroconstruct.cell.Cell">
+ <object class="ucl.physiol.neuroconstruct.cell.Cell" id="Cell0">
   <void property="allSegments">
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.cell.Segment" id="Segment0">
@@ -23,7 +23,7 @@
       <float>5.0</float>
      </void>
      <void property="section">
-      <object class="ucl.physiol.neuroconstruct.cell.Section">
+      <object class="ucl.physiol.neuroconstruct.cell.Section" id="Section0">
        <void property="groups">
         <void method="add">
          <string>soma_group</string>
@@ -75,7 +75,7 @@
       <float>1.0</float>
      </void>
      <void property="section">
-      <object class="ucl.physiol.neuroconstruct.cell.Section">
+      <object class="ucl.physiol.neuroconstruct.cell.Section" id="Section1">
        <void property="groups">
         <void method="add">
          <string>axon_group</string>
@@ -124,7 +124,7 @@
       <float>1.0</float>
      </void>
      <void property="section">
-      <object class="ucl.physiol.neuroconstruct.cell.Section">
+      <object class="ucl.physiol.neuroconstruct.cell.Section" id="Section2">
        <void property="groups">
         <void method="add">
          <string>axon_group</string>
@@ -176,7 +176,7 @@
       <float>1.0</float>
      </void>
      <void property="section">
-      <object class="ucl.physiol.neuroconstruct.cell.Section">
+      <object class="ucl.physiol.neuroconstruct.cell.Section" id="Section3">
        <void property="groups">
         <void method="add">
          <string>axon_group</string>
@@ -248,10 +248,40 @@ incorporating channel mechanisms based on ChannelML</string>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
+      <float>1.79811E-7</float>
+     </void>
+     <void property="name">
+      <string>Gran_KCa_98</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
       <float>8.89691E-8</float>
      </void>
      <void property="name">
       <string>Gran_KDr_98</string>
+     </void>
+    </object>
+    <object class="java.util.Vector">
+     <void method="add">
+      <string>soma_group</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
+     <void property="density">
+      <float>3.090506E-10</float>
+     </void>
+     <void property="name">
+      <string>Gran_H_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -275,40 +305,10 @@ incorporating channel mechanisms based on ChannelML</string>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>1.14567E-8</float>
+      <float>5.57227E-7</float>
      </void>
      <void property="name">
-      <string>Gran_KA_98</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>soma_group</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>1.79811E-7</float>
-     </void>
-     <void property="name">
-      <string>Gran_KCa_98</string>
-     </void>
-    </object>
-    <object class="java.util.Vector">
-     <void method="add">
-      <string>soma_group</string>
-     </void>
-    </object>
-   </void>
-   <void method="put">
-    <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
-     <void property="density">
-      <float>3.30033E-10</float>
-     </void>
-     <void property="name">
-      <string>GranPassiveCond</string>
+      <string>Gran_NaF_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -335,10 +335,10 @@ incorporating channel mechanisms based on ChannelML</string>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>3.090506E-10</float>
+      <float>1.14567E-8</float>
      </void>
      <void property="name">
-      <string>Gran_H_98</string>
+      <string>Gran_KA_98</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -350,10 +350,10 @@ incorporating channel mechanisms based on ChannelML</string>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.ChannelMechanism">
      <void property="density">
-      <float>5.57227E-7</float>
+      <float>3.30033E-10</float>
      </void>
      <void property="name">
-      <string>Gran_NaF_98</string>
+      <string>GranPassiveCond</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -399,11 +399,14 @@ incorporating channel mechanisms based on ChannelML</string>
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
-     <void property="name">
-      <string>na</string>
+     <void property="externalConcentration">
+      <float>2.4E-18</float>
      </void>
-     <void property="reversalPotential">
-      <float>55.0</float>
+     <void property="internalConcentration">
+      <float>7.55E-23</float>
+     </void>
+     <void property="name">
+      <string>ca</string>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -414,14 +417,11 @@ incorporating channel mechanisms based on ChannelML</string>
    </void>
    <void method="put">
     <object class="ucl.physiol.neuroconstruct.cell.IonProperties">
-     <void property="externalConcentration">
-      <float>2.4E-18</float>
-     </void>
-     <void property="internalConcentration">
-      <float>7.55E-23</float>
-     </void>
      <void property="name">
-      <string>ca</string>
+      <string>na</string>
+     </void>
+     <void property="reversalPotential">
+      <float>55.0</float>
      </void>
     </object>
     <object class="java.util.Vector">
@@ -446,7 +446,7 @@ incorporating channel mechanisms based on ChannelML</string>
   </void>
   <void property="synapsesVsGroups">
    <void method="put">
-    <string>MF_AMPA</string>
+    <string>NMDA</string>
     <object class="java.util.Vector">
      <void method="add">
       <string>soma_group</string>
@@ -454,7 +454,7 @@ incorporating channel mechanisms based on ChannelML</string>
     </object>
    </void>
    <void method="put">
-    <string>NMDA</string>
+    <string>MF_AMPA</string>
     <object class="java.util.Vector">
      <void method="add">
       <string>soma_group</string>

@@ -94,9 +94,13 @@
             <segmentGroup id="dendrite_group" neuroLexId="GO:0030425">    <!--Dendrite group-->
 
                 <include segmentGroup="Section_1"/>
-                <include segmentGroup="Section_2"/>
                 <include segmentGroup="Section_3"/>
                 <include segmentGroup="Section_4"/>
+            </segmentGroup>
+
+            <segmentGroup id="axon_group" neuroLexId="GO:0030424">    <!--Axon group-->
+
+                <include segmentGroup="Section_2"/>
             </segmentGroup>
 
             
