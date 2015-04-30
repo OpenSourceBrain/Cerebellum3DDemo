@@ -5,3 +5,5 @@
 This repository is only used to test features of OSB & NeuroML and make some nice looking demos...
 
 **Do not assume any of the physiological/anatomical details here are correct!**
+
+![Gratuitous screenshot 1](https://raw.githubusercontent.com/OpenSourceBrain/Cerebellum3DDemo/master/images/Selection_648.jpg)
