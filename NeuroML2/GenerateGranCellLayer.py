@@ -226,8 +226,13 @@ def generate_granule_cell_layer(network_id,
 
         # Save to LEMS XML file
         lems_file_name = ls.save_to_file()
+    else:
+        
+        ls = None
         
     print "-----------------------------------"
+    
+    return nml_doc, ls
 
 
     
