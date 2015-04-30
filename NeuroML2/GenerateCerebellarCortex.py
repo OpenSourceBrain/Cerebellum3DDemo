@@ -120,6 +120,20 @@ if __name__ == "__main__":
                                 numCells_purk = 4,
                                 connections = True,
                                 generate_lems_simulation = True)
+    large = True
+    if large:
+    
+      generate_cerebellar_cortex( "CerebellarCortexLarge",
+                                random_seed = 123,
+                                x_size = 1000,
+                                grc_y_size = 150, 
+                                purk_y_size = 30, 
+                                z_size = 1000,
+                                numCells_grc = 2200,
+                                numCells_gol = 400,
+                                numCells_purk = 20,
+                                connections = False,
+                                generate_lems_simulation = True)
 
 
                                      
