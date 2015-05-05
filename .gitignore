@@ -20,3 +20,7 @@ NeuroML2/*.js
 NeuroML2/*.svg
 *~
 
+*.pov
+*.ini
+
+
