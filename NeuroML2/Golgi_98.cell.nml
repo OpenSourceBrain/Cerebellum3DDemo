@@ -74,7 +74,7 @@ Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in 
                 <channelDensityNernst condDensity="0.831757 mS_per_cm2" id="Golgi_CaHVA_CML_all" ionChannel="Golgi_CaHVA_CML" ion="ca"/>
                 
 
-                <spikeThresh value="0 mV"/>
+                <spikeThresh value="-20.0 mV"/>
 
                 <specificCapacitance value="1.0 uF_per_cm2"/>
 

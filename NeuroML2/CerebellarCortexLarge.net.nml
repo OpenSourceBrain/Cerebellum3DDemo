@@ -5,8 +5,8 @@
     <include href="GABAA.synapse.nml"></include>
     <include href="purk2.cell.nml"></include>
     <network id="CerebellarCortexLarge" type="networkWithTemperature" temperature="32.0 degC">
-        <notes>Network generated using libNeuroML v0.2.6</notes>
-        <population id="Grans" component="Granule_98" type="populationList" size="2200">
+        <notes>Network generated using libNeuroML v0.2.11</notes>
+        <population id="Grans" type="populationList" component="Granule_98" size="2200">
             <instance id="0">
                 <location y="13.078001628399999" x="52.363598850899997" z="407.241763670000012"/>
             </instance>
@@ -6608,7 +6608,7 @@
                 <location y="90.117638011899999" x="664.519914477000043" z="950.949938648000057"/>
             </instance>
         </population>
-        <population id="Golgis" component="Golgi_98" type="populationList" size="400">
+        <population id="Golgis" type="populationList" component="Golgi_98" size="400">
             <instance id="0">
                 <location y="85.282385489600003" x="936.199288388000014" z="543.206021080000028"/>
             </instance>
@@ -7810,7 +7810,7 @@
                 <location y="132.787445983999987" x="877.791816351999955" z="681.668393715999969"/>
             </instance>
         </population>
-        <population id="Purkinjes" component="purk2" type="populationList" size="20">
+        <population id="Purkinjes" type="populationList" component="purk2" size="20">
             <instance id="0">
                 <location y="153.749223954999991" x="853.308179819999964" z="276.674869902000012"/>
             </instance>

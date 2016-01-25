@@ -69,7 +69,7 @@
                 <channelDensity condDensity="0.0330033 mS_per_cm2" id="GranPassiveCond_all" ionChannel="GranPassiveCond" ion="non_specific" erev="-65.0 mV"/>
                 
 
-                <spikeThresh value="0 mV"/>
+                <spikeThresh value="-20.0 mV"/>
 
                 <specificCapacitance value="1.0 uF_per_cm2"/>
 

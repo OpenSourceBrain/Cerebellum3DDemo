@@ -43,7 +43,7 @@
                 <channelDensity condDensity="30.0 mS_per_cm2" id="MFFastLeakCond_all" ionChannel="MFFastLeakCond" ion="non_specific" erev="-60.0 mV"/>
                 
 
-                <spikeThresh value="0 mV"/>
+                <spikeThresh value="-20.0 mV"/>
 
                 <specificCapacitance value="1.0 uF_per_cm2"/>
 

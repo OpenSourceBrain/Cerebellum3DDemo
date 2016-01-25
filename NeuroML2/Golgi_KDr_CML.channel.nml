@@ -6,8 +6,7 @@
 
     <ionChannel id="Golgi_KDr_CML" conductance="10pS" type="ionChannelHH" species="k">
 
-        <notes>A channel from Maex, R and De Schutter, E. Synchronization of Golgi and Granule Cell Firing in a
-    Detailed Network Model of the Cerebellar Granule Cell Layer</notes>
+        <notes>Delayed rectifyer K channel</notes>
                 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">

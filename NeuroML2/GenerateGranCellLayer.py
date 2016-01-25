@@ -40,7 +40,7 @@ def generate_granule_cell_layer(network_id,
                                 random_seed = 1234,
                                 generate_lems_simulation = False,
                                 duration = 500,  # ms
-                                dt = 0.05,
+                                dt = 0.005,
                                 temperature="32.0 degC"):
 
     seed(random_seed)
@@ -58,8 +58,10 @@ def generate_granule_cell_layer(network_id,
     grc_group_component = "Granule_98"
     gol_group_component = "Golgi_98"
 
-    nml_doc.includes.append(IncludeType(href='%s.cell.nml'%grc_group_component))
-    nml_doc.includes.append(IncludeType(href='%s.cell.nml'%gol_group_component))
+    if numCells_grc>0:
+        nml_doc.includes.append(IncludeType(href='%s.cell.nml'%grc_group_component))
+    if numCells_gol>0:
+        nml_doc.includes.append(IncludeType(href='%s.cell.nml'%gol_group_component))
 
     # The names of the Exc & Inh groups/populations (Cell Group in neuroConstruct)
     grc_group = "Grans" 
@@ -78,25 +80,26 @@ def generate_granule_cell_layer(network_id,
 
 
     # Generate excitatory cells 
+    if numCells_grc>0:
+        grc_pop = Population(id=grc_group, component=grc_group_component, type="populationList", size=numCells_grc)
+        net.populations.append(grc_pop)
 
-    grc_pop = Population(id=grc_group, component=grc_group_component, type="populationList", size=numCells_grc)
-    net.populations.append(grc_pop)
-
-    for i in range(0, numCells_grc) :
-            index = i
-            inst = Instance(id=index)
-            grc_pop.instances.append(inst)
-            inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+        for i in range(0, numCells_grc) :
+                index = i
+                inst = Instance(id=index)
+                grc_pop.instances.append(inst)
+                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
 
     # Generate inhibitory cells
-    gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
-    net.populations.append(gol_pop)
+    if numCells_gol>0:
+        gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
+        net.populations.append(gol_pop)
 
-    for i in range(0, numCells_gol) :
-            index = i
-            inst = Instance(id=index)
-            gol_pop.instances.append(inst)
-            inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+        for i in range(0, numCells_gol) :
+                index = i
+                inst = Instance(id=index)
+                gol_pop.instances.append(inst)
+                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
 
     if connections:
 
@@ -142,11 +145,11 @@ def generate_granule_cell_layer(network_id,
         mf_input_syn = "MF_AMPA"
         nml_doc.includes.append(IncludeType(href='%s.synapse.nml'%mf_input_syn))
         
-        rand_spiker_id = "input50Hz"
+        rand_spiker_id = "input%sHz"%input_firing_rate
         
         
         #<poissonFiringSynapse id="Input_8" averageRate="50.0 per_s" synapse="MFSpikeSyn" spikeTarget="./MFSpikeSyn"/>
-        pfs = PoissonFiringSynapse(id="input50Hz",
+        pfs = PoissonFiringSynapse(id=rand_spiker_id,
                                    average_rate="%s per_s"%input_firing_rate,
                                    synapse=mf_input_syn,
                                    spike_target="./%s"%mf_input_syn)
@@ -202,27 +205,30 @@ def generate_granule_cell_layer(network_id,
         
 
         # Specify Displays and Output Files
-        disp_grc = "display_grc"
-        ls.create_display(disp_grc, "Voltages Granule cells", "-95", "-38")
+        if numCells_grc>0:
+            disp_grc = "display_grc"
+            ls.create_display(disp_grc, "Voltages Granule cells", "-95", "-38")
 
-        of_grc = 'Volts_file_grc'
-        ls.create_output_file(of_grc, "v_grc.dat")
+            of_grc = 'Volts_file_grc'
+            ls.create_output_file(of_grc, "v_grc.dat")
+
+
+            for i in range(numCells_grc):
+                quantity = "%s/%i/%s/v"%(grc_group, i, grc_group_component)
+                ls.add_line_to_display(disp_grc, "GrC %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
+                ls.add_column_to_output_file(of_grc, "v_%i"%i, quantity)
         
-        disp_gol = "display_gol"
-        ls.create_display(disp_gol, "Voltages Golgi cells", "-95", "-38")
+        if numCells_gol>0:
+            disp_gol = "display_gol"
+            ls.create_display(disp_gol, "Voltages Golgi cells", "-95", "-38")
 
-        of_gol = 'Volts_file_gol'
-        ls.create_output_file(of_gol, "v_gol.dat")
+            of_gol = 'Volts_file_gol'
+            ls.create_output_file(of_gol, "v_gol.dat")
 
-        for i in range(numCells_grc):
-            quantity = "%s/%i/%s/v"%(grc_group, i, grc_group_component)
-            ls.add_line_to_display(disp_grc, "GrC %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
-            ls.add_column_to_output_file(of_grc, "v_%i"%i, quantity)
-            
-        for i in range(numCells_gol):
-            quantity = "%s/%i/%s/v"%(gol_group, i, gol_group_component)
-            ls.add_line_to_display(disp_gol, "Golgi %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
-            ls.add_column_to_output_file(of_gol, "v_%i"%i, quantity)
+            for i in range(numCells_gol):
+                quantity = "%s/%i/%s/v"%(gol_group, i, gol_group_component)
+                ls.add_line_to_display(disp_gol, "Golgi %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
+                ls.add_column_to_output_file(of_gol, "v_%i"%i, quantity)
 
         # Save to LEMS XML file
         lems_file_name = ls.save_to_file()

@@ -1,29 +1,24 @@
 #
 #
 
-from neuroml import NeuroMLDocument
-from neuroml import Network
-from neuroml import Population
-from neuroml import Location
-from neuroml import Instance
-from neuroml import Projection
+from GenerateGranCellLayer import generate_granule_cell_layer
 from neuroml import Connection
 from neuroml import IncludeType
-from neuroml import InputList
 from neuroml import Input
+from neuroml import InputList
+from neuroml import Instance
+from neuroml import Location
+from neuroml import Network
+from neuroml import NeuroMLDocument
 from neuroml import PoissonFiringSynapse
-
+from neuroml import Population
+from neuroml import Projection
 from neuroml import __version__
-
 import neuroml.writers as writers
-
 from pyneuroml import pynml
 from pyneuroml.lems.LEMSSimulation import LEMSSimulation
-
 from random import random
 from random import seed
-
-from GenerateGranCellLayer import generate_granule_cell_layer
 
 
 def generate_cerebellar_cortex(network_id,
@@ -38,13 +33,13 @@ def generate_cerebellar_cortex(network_id,
                                 connection_probability_grc_gol =   0.2,
                                 connection_probability_gol_grc =   0.1,
                                 inputs = False,
-                                input_firing_rate = 50, # Hz
+                                input_firing_rate = 200, # Hz
                                 num_inputs_per_grc = 4,
                                 validate = True,
                                 random_seed = 1234,
                                 generate_lems_simulation = False,
                                 duration = 500,  # ms
-                                dt = 0.05,
+                                dt = 0.01,
                                 temperature="32.0 degC"):
 
     seed(random_seed)
@@ -72,21 +67,22 @@ def generate_cerebellar_cortex(network_id,
     
     purk_group_component = "purk2"
 
-    nml_doc.includes.append(IncludeType(href='%s.cell.nml'%purk_group_component))
-
     purk_group = "Purkinjes" 
 
 
     # Generate excitatory cells 
 
-    purk_pop = Population(id=purk_group, component=purk_group_component, type="populationList", size=numCells_purk)
-    net.populations.append(purk_pop)
+    if numCells_purk>0:
+        nml_doc.includes.append(IncludeType(href='%s.cell.nml'%purk_group_component))
+        
+        purk_pop = Population(id=purk_group, component=purk_group_component, type="populationList", size=numCells_purk)
+        net.populations.append(purk_pop)
 
-    for i in range(0, numCells_purk) :
-            index = i
-            inst = Instance(id=index)
-            purk_pop.instances.append(inst)
-            inst.location = Location(x=str(x_size*random()), y=str(grc_y_size + purk_y_size*random()), z=str(z_size*random()))
+        for i in range(0, numCells_purk):
+                index = i
+                inst = Instance(id=index)
+                purk_pop.instances.append(inst)
+                inst.location = Location(x=str(x_size*random()), y=str(grc_y_size + purk_y_size*random()), z=str(z_size*random()))
 
 
     #######   Write to file  ######    
@@ -119,8 +115,9 @@ if __name__ == "__main__":
                                 numCells_gol = 40,
                                 numCells_purk = 4,
                                 connections = True,
-                                generate_lems_simulation = True)
-    large = True
+                                generate_lems_simulation = True,
+                                inputs = True)
+    large = False
     if large:
     
       generate_cerebellar_cortex( "CerebellarCortexLarge",

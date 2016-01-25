@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.0.5
+        This LEMS file has been automatically generated using PyNeuroML v0.1.7 (libNeuroML v0.2.11)
 
      -->
     
@@ -34,11 +34,27 @@
     <Include file="GolgiPassiveCond.channel.nml"/>
     <Include file="CerebellarCortexLarge.net.nml"/>
     <Include file="Granule_98.cell.nml"/>
+    <Include file="Gran_CaHVA_98.channel.nml"/>
+    <Include file="Gran_CaPool_98.nml"/>
+    <Include file="Gran_H_98.channel.nml"/>
+    <Include file="Gran_KA_98.channel.nml"/>
+    <Include file="Gran_KCa_98.channel.nml"/>
+    <Include file="Gran_KDr_98.channel.nml"/>
+    <Include file="Gran_NaF_98.channel.nml"/>
+    <Include file="GranPassiveCond.channel.nml"/>
     <Include file="Golgi_98.cell.nml"/>
+    <Include file="Golgi_CaHVA_CML.channel.nml"/>
+    <Include file="Golgi_CaPool_CML.nml"/>
+    <Include file="Golgi_H_CML.channel.nml"/>
+    <Include file="Golgi_KA_CML.channel.nml"/>
+    <Include file="Golgi_KCa_CML.channel.nml"/>
+    <Include file="Golgi_KDr_CML.channel.nml"/>
+    <Include file="Golgi_NaF_CML.channel.nml"/>
+    <Include file="GolgiPassiveCond.channel.nml"/>
     <Include file="AMPA_GranGol.synapse.nml"/>
     <Include file="GABAA.synapse.nml"/>
     <Include file="purk2.cell.nml"/>
-    <Include file="PurkPassiveCond.channel.nml"/>
+    <Include file="Leak.channel.nml"/>
    
     <Simulation id="Sim_CerebellarCortexLarge" length="500ms" step="0.05ms" target="CerebellarCortexLarge">
         

@@ -3,7 +3,7 @@
 
     <notes>ChannelML file describing a synaptic mechanism</notes>
 
-    <expTwoSynapse id="MF_AMPA" tauRise="3e-5s" tauDecay="5e-4s" gbase="1.1238527e-10S" erev="0V">
+    <expTwoSynapse id="MF_AMPA" tauRise="3e-5s" tauDecay="5e-4s" gbase="4e-10S" erev="0V">
 
         <notes>Mossy fiber to Granule Cell AMPA synapse</notes>
 </expTwoSynapse>
