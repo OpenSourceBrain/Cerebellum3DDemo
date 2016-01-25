@@ -42,6 +42,8 @@
     <Include file="Golgi_NaR.channel.nml"/>
     <Include file="Golgi_NaT.channel.nml"/>
     <Include file="CerebellarCortex.net.nml"/>
+    <Include file="MossyFiber.cell.nml"/>
+    <Include file="MFFastLeakCond.channel.nml"/>
     <Include file="Granule_98.cell.nml"/>
     <Include file="Gran_CaHVA_98.channel.nml"/>
     <Include file="Gran_CaPool_98.nml"/>
@@ -69,41 +71,220 @@
     <Include file="Golgi_NaP.channel.nml"/>
     <Include file="Golgi_NaR.channel.nml"/>
     <Include file="Golgi_NaT.channel.nml"/>
+    <Include file="MF_AMPA.synapse.nml"/>
     <Include file="AMPA_GranGol.synapse.nml"/>
     <Include file="GABAA.synapse.nml"/>
-    <Include file="MF_AMPA.synapse.nml"/>
+    <Include file="MFSpikeSyn.synapse.nml"/>
     <Include file="purk2.cell.nml"/>
     <Include file="Leak.channel.nml"/>
    
     <Simulation id="Sim_CerebellarCortex" length="500ms" step="0.01ms" target="CerebellarCortex">
         
-        <Display id="display_grc" title="Voltages Granule cells" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-95" ymax="-38">
-            <Line id="GrC 0: Vm" quantity="Grans/0/Granule_98/v" scale="1mV" color="#b3448e" timeScale="1ms"/>
-            <Line id="GrC 1: Vm" quantity="Grans/1/Granule_98/v" scale="1mV" color="#d4ccf5" timeScale="1ms"/>
-            <Line id="GrC 2: Vm" quantity="Grans/2/Granule_98/v" scale="1mV" color="#5e8b7f" timeScale="1ms"/>
-            <Line id="GrC 3: Vm" quantity="Grans/3/Granule_98/v" scale="1mV" color="#f53f71" timeScale="1ms"/>
-            <Line id="GrC 4: Vm" quantity="Grans/4/Granule_98/v" scale="1mV" color="#d82544" timeScale="1ms"/>
-            <Line id="GrC 5: Vm" quantity="Grans/5/Granule_98/v" scale="1mV" color="#cf790d" timeScale="1ms"/>
-            <Line id="GrC 6: Vm" quantity="Grans/6/Granule_98/v" scale="1mV" color="#6eaed2" timeScale="1ms"/>
-            <Line id="GrC 7: Vm" quantity="Grans/7/Granule_98/v" scale="1mV" color="#8afe7a" timeScale="1ms"/>
-            <Line id="GrC 8: Vm" quantity="Grans/8/Granule_98/v" scale="1mV" color="#a4ade3" timeScale="1ms"/>
-            <Line id="GrC 9: Vm" quantity="Grans/9/Granule_98/v" scale="1mV" color="#a03f82" timeScale="1ms"/>
-            <Line id="GrC 10: Vm" quantity="Grans/10/Granule_98/v" scale="1mV" color="#b019ac" timeScale="1ms"/>
-            <Line id="GrC 11: Vm" quantity="Grans/11/Granule_98/v" scale="1mV" color="#7c9915" timeScale="1ms"/>
-            <Line id="GrC 12: Vm" quantity="Grans/12/Granule_98/v" scale="1mV" color="#c8d522" timeScale="1ms"/>
-            <Line id="GrC 13: Vm" quantity="Grans/13/Granule_98/v" scale="1mV" color="#c86e71" timeScale="1ms"/>
-            <Line id="GrC 14: Vm" quantity="Grans/14/Granule_98/v" scale="1mV" color="#ef7187" timeScale="1ms"/>
-            <Line id="GrC 15: Vm" quantity="Grans/15/Granule_98/v" scale="1mV" color="#3b6323" timeScale="1ms"/>
-            <Line id="GrC 16: Vm" quantity="Grans/16/Granule_98/v" scale="1mV" color="#58bded" timeScale="1ms"/>
-            <Line id="GrC 17: Vm" quantity="Grans/17/Granule_98/v" scale="1mV" color="#497639" timeScale="1ms"/>
-            <Line id="GrC 18: Vm" quantity="Grans/18/Granule_98/v" scale="1mV" color="#58e43d" timeScale="1ms"/>
-            <Line id="GrC 19: Vm" quantity="Grans/19/Granule_98/v" scale="1mV" color="#e2fa02" timeScale="1ms"/>
+        <Display id="display_mf" title="Voltages Mossy fibers" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-70" ymax="10">
+            <Line id="MF 0: Vm" quantity="MossyFibers/0/MossyFiber/v" scale="1mV" color="#344542" timeScale="1ms"/>
+            <Line id="MF 1: Vm" quantity="MossyFibers/1/MossyFiber/v" scale="1mV" color="#bb3443" timeScale="1ms"/>
+            <Line id="MF 2: Vm" quantity="MossyFibers/2/MossyFiber/v" scale="1mV" color="#3f1da7" timeScale="1ms"/>
+            <Line id="MF 3: Vm" quantity="MossyFibers/3/MossyFiber/v" scale="1mV" color="#d622c2" timeScale="1ms"/>
+            <Line id="MF 4: Vm" quantity="MossyFibers/4/MossyFiber/v" scale="1mV" color="#c47e5d" timeScale="1ms"/>
+            <Line id="MF 5: Vm" quantity="MossyFibers/5/MossyFiber/v" scale="1mV" color="#eba0e7" timeScale="1ms"/>
+            <Line id="MF 6: Vm" quantity="MossyFibers/6/MossyFiber/v" scale="1mV" color="#f21589" timeScale="1ms"/>
+            <Line id="MF 7: Vm" quantity="MossyFibers/7/MossyFiber/v" scale="1mV" color="#8f29a0" timeScale="1ms"/>
+            <Line id="MF 8: Vm" quantity="MossyFibers/8/MossyFiber/v" scale="1mV" color="#e4530a" timeScale="1ms"/>
+            <Line id="MF 9: Vm" quantity="MossyFibers/9/MossyFiber/v" scale="1mV" color="#e81f2e" timeScale="1ms"/>
+            <Line id="MF 10: Vm" quantity="MossyFibers/10/MossyFiber/v" scale="1mV" color="#a3ffdf" timeScale="1ms"/>
+            <Line id="MF 11: Vm" quantity="MossyFibers/11/MossyFiber/v" scale="1mV" color="#2cd592" timeScale="1ms"/>
+            <Line id="MF 12: Vm" quantity="MossyFibers/12/MossyFiber/v" scale="1mV" color="#cbbaf0" timeScale="1ms"/>
+            <Line id="MF 13: Vm" quantity="MossyFibers/13/MossyFiber/v" scale="1mV" color="#a32dce" timeScale="1ms"/>
+            <Line id="MF 14: Vm" quantity="MossyFibers/14/MossyFiber/v" scale="1mV" color="#6f2f3b" timeScale="1ms"/>
+            <Line id="MF 15: Vm" quantity="MossyFibers/15/MossyFiber/v" scale="1mV" color="#dbfb69" timeScale="1ms"/>
+            <Line id="MF 16: Vm" quantity="MossyFibers/16/MossyFiber/v" scale="1mV" color="#166ebc" timeScale="1ms"/>
+            <Line id="MF 17: Vm" quantity="MossyFibers/17/MossyFiber/v" scale="1mV" color="#a5813d" timeScale="1ms"/>
+            <Line id="MF 18: Vm" quantity="MossyFibers/18/MossyFiber/v" scale="1mV" color="#e89587" timeScale="1ms"/>
+            <Line id="MF 19: Vm" quantity="MossyFibers/19/MossyFiber/v" scale="1mV" color="#1f38ee" timeScale="1ms"/>
+            <Line id="MF 20: Vm" quantity="MossyFibers/20/MossyFiber/v" scale="1mV" color="#9ae5b1" timeScale="1ms"/>
+            <Line id="MF 21: Vm" quantity="MossyFibers/21/MossyFiber/v" scale="1mV" color="#e85fa1" timeScale="1ms"/>
+            <Line id="MF 22: Vm" quantity="MossyFibers/22/MossyFiber/v" scale="1mV" color="#e96e31" timeScale="1ms"/>
+            <Line id="MF 23: Vm" quantity="MossyFibers/23/MossyFiber/v" scale="1mV" color="#b0e410" timeScale="1ms"/>
+            <Line id="MF 24: Vm" quantity="MossyFibers/24/MossyFiber/v" scale="1mV" color="#1c5276" timeScale="1ms"/>
+            <Line id="MF 25: Vm" quantity="MossyFibers/25/MossyFiber/v" scale="1mV" color="#89c1da" timeScale="1ms"/>
+            <Line id="MF 26: Vm" quantity="MossyFibers/26/MossyFiber/v" scale="1mV" color="#f54e77" timeScale="1ms"/>
+            <Line id="MF 27: Vm" quantity="MossyFibers/27/MossyFiber/v" scale="1mV" color="#e66eb7" timeScale="1ms"/>
+            <Line id="MF 28: Vm" quantity="MossyFibers/28/MossyFiber/v" scale="1mV" color="#fe091b" timeScale="1ms"/>
+            <Line id="MF 29: Vm" quantity="MossyFibers/29/MossyFiber/v" scale="1mV" color="#f4d1c9" timeScale="1ms"/>
+            <Line id="MF 30: Vm" quantity="MossyFibers/30/MossyFiber/v" scale="1mV" color="#d7262c" timeScale="1ms"/>
+            <Line id="MF 31: Vm" quantity="MossyFibers/31/MossyFiber/v" scale="1mV" color="#05d5b7" timeScale="1ms"/>
+            <Line id="MF 32: Vm" quantity="MossyFibers/32/MossyFiber/v" scale="1mV" color="#ded310" timeScale="1ms"/>
+            <Line id="MF 33: Vm" quantity="MossyFibers/33/MossyFiber/v" scale="1mV" color="#8d9bf5" timeScale="1ms"/>
+            <Line id="MF 34: Vm" quantity="MossyFibers/34/MossyFiber/v" scale="1mV" color="#66007c" timeScale="1ms"/>
+            <Line id="MF 35: Vm" quantity="MossyFibers/35/MossyFiber/v" scale="1mV" color="#fea6b9" timeScale="1ms"/>
+            <Line id="MF 36: Vm" quantity="MossyFibers/36/MossyFiber/v" scale="1mV" color="#b979f0" timeScale="1ms"/>
+            <Line id="MF 37: Vm" quantity="MossyFibers/37/MossyFiber/v" scale="1mV" color="#2d7cb4" timeScale="1ms"/>
+            <Line id="MF 38: Vm" quantity="MossyFibers/38/MossyFiber/v" scale="1mV" color="#66f924" timeScale="1ms"/>
+            <Line id="MF 39: Vm" quantity="MossyFibers/39/MossyFiber/v" scale="1mV" color="#f19754" timeScale="1ms"/>
+            <Line id="MF 40: Vm" quantity="MossyFibers/40/MossyFiber/v" scale="1mV" color="#e2c035" timeScale="1ms"/>
+            <Line id="MF 41: Vm" quantity="MossyFibers/41/MossyFiber/v" scale="1mV" color="#bd2d68" timeScale="1ms"/>
+            <Line id="MF 42: Vm" quantity="MossyFibers/42/MossyFiber/v" scale="1mV" color="#8f6c2a" timeScale="1ms"/>
+            <Line id="MF 43: Vm" quantity="MossyFibers/43/MossyFiber/v" scale="1mV" color="#28ebb4" timeScale="1ms"/>
         </Display>
         
-        <Display id="display_gol" title="Voltages Golgi cells" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-95" ymax="-38">
-            <Line id="Golgi 0: Vm" quantity="Golgis/0/Golgi_040408_C1/v" scale="1mV" color="#ef877c" timeScale="1ms"/>
-            <Line id="Golgi 1: Vm" quantity="Golgis/1/Golgi_040408_C1/v" scale="1mV" color="#cda1ba" timeScale="1ms"/>
+        <Display id="display_grc" title="Voltages Granule cells" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-75" ymax="30">
+            <Line id="GrC 0: Vm" quantity="Grans/0/Granule_98/v" scale="1mV" color="#87757a" timeScale="1ms"/>
+            <Line id="GrC 1: Vm" quantity="Grans/1/Granule_98/v" scale="1mV" color="#4f13bf" timeScale="1ms"/>
+            <Line id="GrC 2: Vm" quantity="Grans/2/Granule_98/v" scale="1mV" color="#d0b549" timeScale="1ms"/>
+            <Line id="GrC 3: Vm" quantity="Grans/3/Granule_98/v" scale="1mV" color="#690d27" timeScale="1ms"/>
+            <Line id="GrC 4: Vm" quantity="Grans/4/Granule_98/v" scale="1mV" color="#358fd0" timeScale="1ms"/>
+            <Line id="GrC 5: Vm" quantity="Grans/5/Granule_98/v" scale="1mV" color="#3ccddd" timeScale="1ms"/>
+            <Line id="GrC 6: Vm" quantity="Grans/6/Granule_98/v" scale="1mV" color="#52da16" timeScale="1ms"/>
+            <Line id="GrC 7: Vm" quantity="Grans/7/Granule_98/v" scale="1mV" color="#f1e2d7" timeScale="1ms"/>
+            <Line id="GrC 8: Vm" quantity="Grans/8/Granule_98/v" scale="1mV" color="#09509e" timeScale="1ms"/>
+            <Line id="GrC 9: Vm" quantity="Grans/9/Granule_98/v" scale="1mV" color="#f2b680" timeScale="1ms"/>
+            <Line id="GrC 10: Vm" quantity="Grans/10/Granule_98/v" scale="1mV" color="#9580d2" timeScale="1ms"/>
+            <Line id="GrC 11: Vm" quantity="Grans/11/Granule_98/v" scale="1mV" color="#9d8245" timeScale="1ms"/>
+            <Line id="GrC 12: Vm" quantity="Grans/12/Granule_98/v" scale="1mV" color="#55eb78" timeScale="1ms"/>
+            <Line id="GrC 13: Vm" quantity="Grans/13/Granule_98/v" scale="1mV" color="#cfce04" timeScale="1ms"/>
+            <Line id="GrC 14: Vm" quantity="Grans/14/Granule_98/v" scale="1mV" color="#2f8dac" timeScale="1ms"/>
+            <Line id="GrC 15: Vm" quantity="Grans/15/Granule_98/v" scale="1mV" color="#b771fc" timeScale="1ms"/>
+            <Line id="GrC 16: Vm" quantity="Grans/16/Granule_98/v" scale="1mV" color="#4672fc" timeScale="1ms"/>
+            <Line id="GrC 17: Vm" quantity="Grans/17/Granule_98/v" scale="1mV" color="#cb3ae8" timeScale="1ms"/>
+            <Line id="GrC 18: Vm" quantity="Grans/18/Granule_98/v" scale="1mV" color="#17a119" timeScale="1ms"/>
+            <Line id="GrC 19: Vm" quantity="Grans/19/Granule_98/v" scale="1mV" color="#42153e" timeScale="1ms"/>
+            <Line id="GrC 20: Vm" quantity="Grans/20/Granule_98/v" scale="1mV" color="#3ff159" timeScale="1ms"/>
+            <Line id="GrC 21: Vm" quantity="Grans/21/Granule_98/v" scale="1mV" color="#98a520" timeScale="1ms"/>
+            <Line id="GrC 22: Vm" quantity="Grans/22/Granule_98/v" scale="1mV" color="#17b47e" timeScale="1ms"/>
+            <Line id="GrC 23: Vm" quantity="Grans/23/Granule_98/v" scale="1mV" color="#474d13" timeScale="1ms"/>
+            <Line id="GrC 24: Vm" quantity="Grans/24/Granule_98/v" scale="1mV" color="#daa430" timeScale="1ms"/>
+            <Line id="GrC 25: Vm" quantity="Grans/25/Granule_98/v" scale="1mV" color="#766068" timeScale="1ms"/>
+            <Line id="GrC 26: Vm" quantity="Grans/26/Granule_98/v" scale="1mV" color="#41807c" timeScale="1ms"/>
+            <Line id="GrC 27: Vm" quantity="Grans/27/Granule_98/v" scale="1mV" color="#3e2031" timeScale="1ms"/>
+            <Line id="GrC 28: Vm" quantity="Grans/28/Granule_98/v" scale="1mV" color="#2d8721" timeScale="1ms"/>
+            <Line id="GrC 29: Vm" quantity="Grans/29/Granule_98/v" scale="1mV" color="#8fbc63" timeScale="1ms"/>
+            <Line id="GrC 30: Vm" quantity="Grans/30/Granule_98/v" scale="1mV" color="#302a50" timeScale="1ms"/>
+            <Line id="GrC 31: Vm" quantity="Grans/31/Granule_98/v" scale="1mV" color="#0ad51b" timeScale="1ms"/>
+            <Line id="GrC 32: Vm" quantity="Grans/32/Granule_98/v" scale="1mV" color="#643780" timeScale="1ms"/>
+            <Line id="GrC 33: Vm" quantity="Grans/33/Granule_98/v" scale="1mV" color="#b8cde5" timeScale="1ms"/>
+            <Line id="GrC 34: Vm" quantity="Grans/34/Granule_98/v" scale="1mV" color="#e17c3b" timeScale="1ms"/>
+            <Line id="GrC 35: Vm" quantity="Grans/35/Granule_98/v" scale="1mV" color="#0568eb" timeScale="1ms"/>
+            <Line id="GrC 36: Vm" quantity="Grans/36/Granule_98/v" scale="1mV" color="#fc9b4e" timeScale="1ms"/>
+            <Line id="GrC 37: Vm" quantity="Grans/37/Granule_98/v" scale="1mV" color="#2f6376" timeScale="1ms"/>
+            <Line id="GrC 38: Vm" quantity="Grans/38/Granule_98/v" scale="1mV" color="#c53cf3" timeScale="1ms"/>
+            <Line id="GrC 39: Vm" quantity="Grans/39/Granule_98/v" scale="1mV" color="#9ffc2c" timeScale="1ms"/>
+            <Line id="GrC 40: Vm" quantity="Grans/40/Granule_98/v" scale="1mV" color="#be71cc" timeScale="1ms"/>
+            <Line id="GrC 41: Vm" quantity="Grans/41/Granule_98/v" scale="1mV" color="#9aa2cc" timeScale="1ms"/>
+            <Line id="GrC 42: Vm" quantity="Grans/42/Granule_98/v" scale="1mV" color="#de7f2d" timeScale="1ms"/>
+            <Line id="GrC 43: Vm" quantity="Grans/43/Granule_98/v" scale="1mV" color="#039c8e" timeScale="1ms"/>
+            <Line id="GrC 44: Vm" quantity="Grans/44/Granule_98/v" scale="1mV" color="#95d54b" timeScale="1ms"/>
+            <Line id="GrC 45: Vm" quantity="Grans/45/Granule_98/v" scale="1mV" color="#13f7ce" timeScale="1ms"/>
+            <Line id="GrC 46: Vm" quantity="Grans/46/Granule_98/v" scale="1mV" color="#4ba5e9" timeScale="1ms"/>
+            <Line id="GrC 47: Vm" quantity="Grans/47/Granule_98/v" scale="1mV" color="#c33461" timeScale="1ms"/>
+            <Line id="GrC 48: Vm" quantity="Grans/48/Granule_98/v" scale="1mV" color="#daa141" timeScale="1ms"/>
+            <Line id="GrC 49: Vm" quantity="Grans/49/Granule_98/v" scale="1mV" color="#09401f" timeScale="1ms"/>
+            <Line id="GrC 50: Vm" quantity="Grans/50/Granule_98/v" scale="1mV" color="#88e213" timeScale="1ms"/>
+            <Line id="GrC 51: Vm" quantity="Grans/51/Granule_98/v" scale="1mV" color="#8c6df9" timeScale="1ms"/>
+            <Line id="GrC 52: Vm" quantity="Grans/52/Granule_98/v" scale="1mV" color="#f65513" timeScale="1ms"/>
+            <Line id="GrC 53: Vm" quantity="Grans/53/Granule_98/v" scale="1mV" color="#4be2b2" timeScale="1ms"/>
+            <Line id="GrC 54: Vm" quantity="Grans/54/Granule_98/v" scale="1mV" color="#4254d7" timeScale="1ms"/>
+            <Line id="GrC 55: Vm" quantity="Grans/55/Granule_98/v" scale="1mV" color="#f76d97" timeScale="1ms"/>
+            <Line id="GrC 56: Vm" quantity="Grans/56/Granule_98/v" scale="1mV" color="#1aa3af" timeScale="1ms"/>
+            <Line id="GrC 57: Vm" quantity="Grans/57/Granule_98/v" scale="1mV" color="#e4a529" timeScale="1ms"/>
+            <Line id="GrC 58: Vm" quantity="Grans/58/Granule_98/v" scale="1mV" color="#facd5d" timeScale="1ms"/>
+            <Line id="GrC 59: Vm" quantity="Grans/59/Granule_98/v" scale="1mV" color="#f2a8a5" timeScale="1ms"/>
+            <Line id="GrC 60: Vm" quantity="Grans/60/Granule_98/v" scale="1mV" color="#307866" timeScale="1ms"/>
+            <Line id="GrC 61: Vm" quantity="Grans/61/Granule_98/v" scale="1mV" color="#80df1e" timeScale="1ms"/>
+            <Line id="GrC 62: Vm" quantity="Grans/62/Granule_98/v" scale="1mV" color="#b2b2b6" timeScale="1ms"/>
+            <Line id="GrC 63: Vm" quantity="Grans/63/Granule_98/v" scale="1mV" color="#66080b" timeScale="1ms"/>
+            <Line id="GrC 64: Vm" quantity="Grans/64/Granule_98/v" scale="1mV" color="#d95242" timeScale="1ms"/>
+            <Line id="GrC 65: Vm" quantity="Grans/65/Granule_98/v" scale="1mV" color="#36b64c" timeScale="1ms"/>
+            <Line id="GrC 66: Vm" quantity="Grans/66/Granule_98/v" scale="1mV" color="#2198ac" timeScale="1ms"/>
+            <Line id="GrC 67: Vm" quantity="Grans/67/Granule_98/v" scale="1mV" color="#88f81c" timeScale="1ms"/>
+            <Line id="GrC 68: Vm" quantity="Grans/68/Granule_98/v" scale="1mV" color="#959061" timeScale="1ms"/>
+            <Line id="GrC 69: Vm" quantity="Grans/69/Granule_98/v" scale="1mV" color="#c062f4" timeScale="1ms"/>
+            <Line id="GrC 70: Vm" quantity="Grans/70/Granule_98/v" scale="1mV" color="#3fe16b" timeScale="1ms"/>
+            <Line id="GrC 71: Vm" quantity="Grans/71/Granule_98/v" scale="1mV" color="#7e0426" timeScale="1ms"/>
+            <Line id="GrC 72: Vm" quantity="Grans/72/Granule_98/v" scale="1mV" color="#ba975f" timeScale="1ms"/>
+            <Line id="GrC 73: Vm" quantity="Grans/73/Granule_98/v" scale="1mV" color="#c50714" timeScale="1ms"/>
+            <Line id="GrC 74: Vm" quantity="Grans/74/Granule_98/v" scale="1mV" color="#042512" timeScale="1ms"/>
+            <Line id="GrC 75: Vm" quantity="Grans/75/Granule_98/v" scale="1mV" color="#0af24a" timeScale="1ms"/>
+            <Line id="GrC 76: Vm" quantity="Grans/76/Granule_98/v" scale="1mV" color="#e0f2ef" timeScale="1ms"/>
+            <Line id="GrC 77: Vm" quantity="Grans/77/Granule_98/v" scale="1mV" color="#19f73c" timeScale="1ms"/>
+            <Line id="GrC 78: Vm" quantity="Grans/78/Granule_98/v" scale="1mV" color="#2130fc" timeScale="1ms"/>
+            <Line id="GrC 79: Vm" quantity="Grans/79/Granule_98/v" scale="1mV" color="#ec9424" timeScale="1ms"/>
+            <Line id="GrC 80: Vm" quantity="Grans/80/Granule_98/v" scale="1mV" color="#7e8bd4" timeScale="1ms"/>
+            <Line id="GrC 81: Vm" quantity="Grans/81/Granule_98/v" scale="1mV" color="#575343" timeScale="1ms"/>
+            <Line id="GrC 82: Vm" quantity="Grans/82/Granule_98/v" scale="1mV" color="#2bccf3" timeScale="1ms"/>
+            <Line id="GrC 83: Vm" quantity="Grans/83/Granule_98/v" scale="1mV" color="#fdc1ed" timeScale="1ms"/>
+            <Line id="GrC 84: Vm" quantity="Grans/84/Granule_98/v" scale="1mV" color="#e35d1d" timeScale="1ms"/>
+            <Line id="GrC 85: Vm" quantity="Grans/85/Granule_98/v" scale="1mV" color="#0025f9" timeScale="1ms"/>
+            <Line id="GrC 86: Vm" quantity="Grans/86/Granule_98/v" scale="1mV" color="#04ffb4" timeScale="1ms"/>
+            <Line id="GrC 87: Vm" quantity="Grans/87/Granule_98/v" scale="1mV" color="#e77128" timeScale="1ms"/>
+            <Line id="GrC 88: Vm" quantity="Grans/88/Granule_98/v" scale="1mV" color="#c480fc" timeScale="1ms"/>
+            <Line id="GrC 89: Vm" quantity="Grans/89/Granule_98/v" scale="1mV" color="#66f2a9" timeScale="1ms"/>
+            <Line id="GrC 90: Vm" quantity="Grans/90/Granule_98/v" scale="1mV" color="#4e1869" timeScale="1ms"/>
+            <Line id="GrC 91: Vm" quantity="Grans/91/Granule_98/v" scale="1mV" color="#7543dd" timeScale="1ms"/>
+            <Line id="GrC 92: Vm" quantity="Grans/92/Granule_98/v" scale="1mV" color="#c74962" timeScale="1ms"/>
+            <Line id="GrC 93: Vm" quantity="Grans/93/Granule_98/v" scale="1mV" color="#0aee3b" timeScale="1ms"/>
+            <Line id="GrC 94: Vm" quantity="Grans/94/Granule_98/v" scale="1mV" color="#fc47ed" timeScale="1ms"/>
+            <Line id="GrC 95: Vm" quantity="Grans/95/Granule_98/v" scale="1mV" color="#c1ffee" timeScale="1ms"/>
+            <Line id="GrC 96: Vm" quantity="Grans/96/Granule_98/v" scale="1mV" color="#d5def1" timeScale="1ms"/>
+            <Line id="GrC 97: Vm" quantity="Grans/97/Granule_98/v" scale="1mV" color="#5b437a" timeScale="1ms"/>
+            <Line id="GrC 98: Vm" quantity="Grans/98/Granule_98/v" scale="1mV" color="#93323d" timeScale="1ms"/>
+            <Line id="GrC 99: Vm" quantity="Grans/99/Granule_98/v" scale="1mV" color="#a92422" timeScale="1ms"/>
         </Display>
+        
+        <Display id="display_gol" title="Voltages Golgi cells" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-75" ymax="30">
+            <Line id="Golgi 0: Vm" quantity="Golgis/0/Golgi_040408_C1/v" scale="1mV" color="#f85a91" timeScale="1ms"/>
+            <Line id="Golgi 1: Vm" quantity="Golgis/1/Golgi_040408_C1/v" scale="1mV" color="#1acd3c" timeScale="1ms"/>
+            <Line id="Golgi 2: Vm" quantity="Golgis/2/Golgi_040408_C1/v" scale="1mV" color="#ffd7ba" timeScale="1ms"/>
+            <Line id="Golgi 3: Vm" quantity="Golgis/3/Golgi_040408_C1/v" scale="1mV" color="#bca7a4" timeScale="1ms"/>
+            <Line id="Golgi 4: Vm" quantity="Golgis/4/Golgi_040408_C1/v" scale="1mV" color="#78ecae" timeScale="1ms"/>
+            <Line id="Golgi 5: Vm" quantity="Golgis/5/Golgi_040408_C1/v" scale="1mV" color="#94208f" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file_mf" fileName="v_mf.dat">
+            <OutputColumn id="v_0" quantity="MossyFibers/0/MossyFiber/v"/> 
+            <OutputColumn id="v_1" quantity="MossyFibers/1/MossyFiber/v"/> 
+            <OutputColumn id="v_2" quantity="MossyFibers/2/MossyFiber/v"/> 
+            <OutputColumn id="v_3" quantity="MossyFibers/3/MossyFiber/v"/> 
+            <OutputColumn id="v_4" quantity="MossyFibers/4/MossyFiber/v"/> 
+            <OutputColumn id="v_5" quantity="MossyFibers/5/MossyFiber/v"/> 
+            <OutputColumn id="v_6" quantity="MossyFibers/6/MossyFiber/v"/> 
+            <OutputColumn id="v_7" quantity="MossyFibers/7/MossyFiber/v"/> 
+            <OutputColumn id="v_8" quantity="MossyFibers/8/MossyFiber/v"/> 
+            <OutputColumn id="v_9" quantity="MossyFibers/9/MossyFiber/v"/> 
+            <OutputColumn id="v_10" quantity="MossyFibers/10/MossyFiber/v"/> 
+            <OutputColumn id="v_11" quantity="MossyFibers/11/MossyFiber/v"/> 
+            <OutputColumn id="v_12" quantity="MossyFibers/12/MossyFiber/v"/> 
+            <OutputColumn id="v_13" quantity="MossyFibers/13/MossyFiber/v"/> 
+            <OutputColumn id="v_14" quantity="MossyFibers/14/MossyFiber/v"/> 
+            <OutputColumn id="v_15" quantity="MossyFibers/15/MossyFiber/v"/> 
+            <OutputColumn id="v_16" quantity="MossyFibers/16/MossyFiber/v"/> 
+            <OutputColumn id="v_17" quantity="MossyFibers/17/MossyFiber/v"/> 
+            <OutputColumn id="v_18" quantity="MossyFibers/18/MossyFiber/v"/> 
+            <OutputColumn id="v_19" quantity="MossyFibers/19/MossyFiber/v"/> 
+            <OutputColumn id="v_20" quantity="MossyFibers/20/MossyFiber/v"/> 
+            <OutputColumn id="v_21" quantity="MossyFibers/21/MossyFiber/v"/> 
+            <OutputColumn id="v_22" quantity="MossyFibers/22/MossyFiber/v"/> 
+            <OutputColumn id="v_23" quantity="MossyFibers/23/MossyFiber/v"/> 
+            <OutputColumn id="v_24" quantity="MossyFibers/24/MossyFiber/v"/> 
+            <OutputColumn id="v_25" quantity="MossyFibers/25/MossyFiber/v"/> 
+            <OutputColumn id="v_26" quantity="MossyFibers/26/MossyFiber/v"/> 
+            <OutputColumn id="v_27" quantity="MossyFibers/27/MossyFiber/v"/> 
+            <OutputColumn id="v_28" quantity="MossyFibers/28/MossyFiber/v"/> 
+            <OutputColumn id="v_29" quantity="MossyFibers/29/MossyFiber/v"/> 
+            <OutputColumn id="v_30" quantity="MossyFibers/30/MossyFiber/v"/> 
+            <OutputColumn id="v_31" quantity="MossyFibers/31/MossyFiber/v"/> 
+            <OutputColumn id="v_32" quantity="MossyFibers/32/MossyFiber/v"/> 
+            <OutputColumn id="v_33" quantity="MossyFibers/33/MossyFiber/v"/> 
+            <OutputColumn id="v_34" quantity="MossyFibers/34/MossyFiber/v"/> 
+            <OutputColumn id="v_35" quantity="MossyFibers/35/MossyFiber/v"/> 
+            <OutputColumn id="v_36" quantity="MossyFibers/36/MossyFiber/v"/> 
+            <OutputColumn id="v_37" quantity="MossyFibers/37/MossyFiber/v"/> 
+            <OutputColumn id="v_38" quantity="MossyFibers/38/MossyFiber/v"/> 
+            <OutputColumn id="v_39" quantity="MossyFibers/39/MossyFiber/v"/> 
+            <OutputColumn id="v_40" quantity="MossyFibers/40/MossyFiber/v"/> 
+            <OutputColumn id="v_41" quantity="MossyFibers/41/MossyFiber/v"/> 
+            <OutputColumn id="v_42" quantity="MossyFibers/42/MossyFiber/v"/> 
+            <OutputColumn id="v_43" quantity="MossyFibers/43/MossyFiber/v"/> 
+        </OutputFile>
         
         <OutputFile id="Volts_file_grc" fileName="v_grc.dat">
             <OutputColumn id="v_0" quantity="Grans/0/Granule_98/v"/> 
@@ -126,11 +307,95 @@
             <OutputColumn id="v_17" quantity="Grans/17/Granule_98/v"/> 
             <OutputColumn id="v_18" quantity="Grans/18/Granule_98/v"/> 
             <OutputColumn id="v_19" quantity="Grans/19/Granule_98/v"/> 
+            <OutputColumn id="v_20" quantity="Grans/20/Granule_98/v"/> 
+            <OutputColumn id="v_21" quantity="Grans/21/Granule_98/v"/> 
+            <OutputColumn id="v_22" quantity="Grans/22/Granule_98/v"/> 
+            <OutputColumn id="v_23" quantity="Grans/23/Granule_98/v"/> 
+            <OutputColumn id="v_24" quantity="Grans/24/Granule_98/v"/> 
+            <OutputColumn id="v_25" quantity="Grans/25/Granule_98/v"/> 
+            <OutputColumn id="v_26" quantity="Grans/26/Granule_98/v"/> 
+            <OutputColumn id="v_27" quantity="Grans/27/Granule_98/v"/> 
+            <OutputColumn id="v_28" quantity="Grans/28/Granule_98/v"/> 
+            <OutputColumn id="v_29" quantity="Grans/29/Granule_98/v"/> 
+            <OutputColumn id="v_30" quantity="Grans/30/Granule_98/v"/> 
+            <OutputColumn id="v_31" quantity="Grans/31/Granule_98/v"/> 
+            <OutputColumn id="v_32" quantity="Grans/32/Granule_98/v"/> 
+            <OutputColumn id="v_33" quantity="Grans/33/Granule_98/v"/> 
+            <OutputColumn id="v_34" quantity="Grans/34/Granule_98/v"/> 
+            <OutputColumn id="v_35" quantity="Grans/35/Granule_98/v"/> 
+            <OutputColumn id="v_36" quantity="Grans/36/Granule_98/v"/> 
+            <OutputColumn id="v_37" quantity="Grans/37/Granule_98/v"/> 
+            <OutputColumn id="v_38" quantity="Grans/38/Granule_98/v"/> 
+            <OutputColumn id="v_39" quantity="Grans/39/Granule_98/v"/> 
+            <OutputColumn id="v_40" quantity="Grans/40/Granule_98/v"/> 
+            <OutputColumn id="v_41" quantity="Grans/41/Granule_98/v"/> 
+            <OutputColumn id="v_42" quantity="Grans/42/Granule_98/v"/> 
+            <OutputColumn id="v_43" quantity="Grans/43/Granule_98/v"/> 
+            <OutputColumn id="v_44" quantity="Grans/44/Granule_98/v"/> 
+            <OutputColumn id="v_45" quantity="Grans/45/Granule_98/v"/> 
+            <OutputColumn id="v_46" quantity="Grans/46/Granule_98/v"/> 
+            <OutputColumn id="v_47" quantity="Grans/47/Granule_98/v"/> 
+            <OutputColumn id="v_48" quantity="Grans/48/Granule_98/v"/> 
+            <OutputColumn id="v_49" quantity="Grans/49/Granule_98/v"/> 
+            <OutputColumn id="v_50" quantity="Grans/50/Granule_98/v"/> 
+            <OutputColumn id="v_51" quantity="Grans/51/Granule_98/v"/> 
+            <OutputColumn id="v_52" quantity="Grans/52/Granule_98/v"/> 
+            <OutputColumn id="v_53" quantity="Grans/53/Granule_98/v"/> 
+            <OutputColumn id="v_54" quantity="Grans/54/Granule_98/v"/> 
+            <OutputColumn id="v_55" quantity="Grans/55/Granule_98/v"/> 
+            <OutputColumn id="v_56" quantity="Grans/56/Granule_98/v"/> 
+            <OutputColumn id="v_57" quantity="Grans/57/Granule_98/v"/> 
+            <OutputColumn id="v_58" quantity="Grans/58/Granule_98/v"/> 
+            <OutputColumn id="v_59" quantity="Grans/59/Granule_98/v"/> 
+            <OutputColumn id="v_60" quantity="Grans/60/Granule_98/v"/> 
+            <OutputColumn id="v_61" quantity="Grans/61/Granule_98/v"/> 
+            <OutputColumn id="v_62" quantity="Grans/62/Granule_98/v"/> 
+            <OutputColumn id="v_63" quantity="Grans/63/Granule_98/v"/> 
+            <OutputColumn id="v_64" quantity="Grans/64/Granule_98/v"/> 
+            <OutputColumn id="v_65" quantity="Grans/65/Granule_98/v"/> 
+            <OutputColumn id="v_66" quantity="Grans/66/Granule_98/v"/> 
+            <OutputColumn id="v_67" quantity="Grans/67/Granule_98/v"/> 
+            <OutputColumn id="v_68" quantity="Grans/68/Granule_98/v"/> 
+            <OutputColumn id="v_69" quantity="Grans/69/Granule_98/v"/> 
+            <OutputColumn id="v_70" quantity="Grans/70/Granule_98/v"/> 
+            <OutputColumn id="v_71" quantity="Grans/71/Granule_98/v"/> 
+            <OutputColumn id="v_72" quantity="Grans/72/Granule_98/v"/> 
+            <OutputColumn id="v_73" quantity="Grans/73/Granule_98/v"/> 
+            <OutputColumn id="v_74" quantity="Grans/74/Granule_98/v"/> 
+            <OutputColumn id="v_75" quantity="Grans/75/Granule_98/v"/> 
+            <OutputColumn id="v_76" quantity="Grans/76/Granule_98/v"/> 
+            <OutputColumn id="v_77" quantity="Grans/77/Granule_98/v"/> 
+            <OutputColumn id="v_78" quantity="Grans/78/Granule_98/v"/> 
+            <OutputColumn id="v_79" quantity="Grans/79/Granule_98/v"/> 
+            <OutputColumn id="v_80" quantity="Grans/80/Granule_98/v"/> 
+            <OutputColumn id="v_81" quantity="Grans/81/Granule_98/v"/> 
+            <OutputColumn id="v_82" quantity="Grans/82/Granule_98/v"/> 
+            <OutputColumn id="v_83" quantity="Grans/83/Granule_98/v"/> 
+            <OutputColumn id="v_84" quantity="Grans/84/Granule_98/v"/> 
+            <OutputColumn id="v_85" quantity="Grans/85/Granule_98/v"/> 
+            <OutputColumn id="v_86" quantity="Grans/86/Granule_98/v"/> 
+            <OutputColumn id="v_87" quantity="Grans/87/Granule_98/v"/> 
+            <OutputColumn id="v_88" quantity="Grans/88/Granule_98/v"/> 
+            <OutputColumn id="v_89" quantity="Grans/89/Granule_98/v"/> 
+            <OutputColumn id="v_90" quantity="Grans/90/Granule_98/v"/> 
+            <OutputColumn id="v_91" quantity="Grans/91/Granule_98/v"/> 
+            <OutputColumn id="v_92" quantity="Grans/92/Granule_98/v"/> 
+            <OutputColumn id="v_93" quantity="Grans/93/Granule_98/v"/> 
+            <OutputColumn id="v_94" quantity="Grans/94/Granule_98/v"/> 
+            <OutputColumn id="v_95" quantity="Grans/95/Granule_98/v"/> 
+            <OutputColumn id="v_96" quantity="Grans/96/Granule_98/v"/> 
+            <OutputColumn id="v_97" quantity="Grans/97/Granule_98/v"/> 
+            <OutputColumn id="v_98" quantity="Grans/98/Granule_98/v"/> 
+            <OutputColumn id="v_99" quantity="Grans/99/Granule_98/v"/> 
         </OutputFile>
         
         <OutputFile id="Volts_file_gol" fileName="v_gol.dat">
             <OutputColumn id="v_0" quantity="Golgis/0/Golgi_040408_C1/v"/> 
             <OutputColumn id="v_1" quantity="Golgis/1/Golgi_040408_C1/v"/> 
+            <OutputColumn id="v_2" quantity="Golgis/2/Golgi_040408_C1/v"/> 
+            <OutputColumn id="v_3" quantity="Golgis/3/Golgi_040408_C1/v"/> 
+            <OutputColumn id="v_4" quantity="Golgis/4/Golgi_040408_C1/v"/> 
+            <OutputColumn id="v_5" quantity="Golgis/5/Golgi_040408_C1/v"/> 
         </OutputFile>
         
     </Simulation>

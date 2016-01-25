@@ -25,12 +25,53 @@ from random import random
 from random import seed
 
 
+def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_id, post_pop, post_component, post_cell_id, post_seg_id):
+
+    connection = Connection(id=id, \
+                            pre_cell_id="../%s/%i/%s"%(pre_pop, pre_cell_id, pre_component), \
+                            pre_segment_id=pre_seg_id, \
+                            pre_fraction_along=0.5,
+                            post_cell_id="../%s/%i/%s"%(post_pop, post_cell_id, post_component), \
+                            post_segment_id=post_seg_id,
+                            post_fraction_along=0.5)
+
+    projection.connections.append(connection)
+    
+
+def add_probabilistic_projection(net, presynaptic_population, pre_component, postsynaptic_population, post_component, prefix, synapse, numCells_pre, numCells_post, connection_probability):
+    
+        if numCells_pre==0 or numCells_post==0:
+            return None
+        
+        proj = Projection(id="%s_%s_%s"%(prefix,presynaptic_population, postsynaptic_population), 
+                          presynaptic_population=presynaptic_population, 
+                          postsynaptic_population=postsynaptic_population, 
+                          synapse=synapse)
+                          
+
+        count = 0
+
+        for i in range(0, numCells_pre):
+            for j in range(0, numCells_post):
+                if i != j:
+                    if random() < connection_probability:
+                        add_connection(proj, count, presynaptic_population, pre_component, i, 0, postsynaptic_population, post_component, j, 0)
+                        
+                    count+=1
+                    
+        net.projections.append(proj)
+        
+        return proj
+
+
 def generate_granule_cell_layer(network_id,
                                 x_size,     # um
                                 y_size,     # um
                                 z_size,     # um
+                                numCells_mf,
                                 numCells_grc,
                                 numCells_gol,
+                                mf_group_component = "MossyFiber",
                                 grc_group_component = "Granule_98",
                                 gol_group_component = "Golgi_98",
                                 connections = True,
@@ -38,7 +79,7 @@ def generate_granule_cell_layer(network_id,
                                 connection_probability_gol_grc =   0.1,
                                 inputs = False,
                                 input_firing_rate = 50, # Hz
-                                num_inputs_per_grc = 4,
+                                num_inputs_per_mf = 4,
                                 validate = True,
                                 random_seed = 1234,
                                 generate_lems_simulation = False,
@@ -57,28 +98,41 @@ def generate_granule_cell_layer(network_id,
     net.notes = "Network generated using libNeuroML v%s"%__version__
     nml_doc.networks.append(net)
 
+    if numCells_mf>0:
+        nml_doc.includes.append(IncludeType(href='%s.cell.nml'%mf_group_component))
     if numCells_grc>0:
         nml_doc.includes.append(IncludeType(href='%s.cell.nml'%grc_group_component))
     if numCells_gol>0:
         nml_doc.includes.append(IncludeType(href='%s.cell.nml'%gol_group_component))
 
-    # The names of the Exc & Inh groups/populations (Cell Group in neuroConstruct)
+    # The names of the groups/populations 
+    mf_group = "MossyFibers" 
     grc_group = "Grans" 
     gol_group = "Golgis" 
 
-    # The names of the network connections 
-    net_conn_grc_gol = "NetConn_Grans_Golgis"
-    net_conn_gol_grc = "NetConn_Golgis_Grans"
 
-    # The names of the synapse types (should match names at Cell Mechanism/Network tabs in neuroConstruct)
+    # The names of the synapse types (should match names at Cell Mechanism/Network tabs in neuroConstruct)=
+    mf_grc_syn = "MF_AMPA"
     grc_gol_syn = "AMPA_GranGol"
     gol_grc_syn = "GABAA"
 
-    for syn in [grc_gol_syn, gol_grc_syn]:
+    for syn in [mf_grc_syn, grc_gol_syn, gol_grc_syn]:
         nml_doc.includes.append(IncludeType(href='%s.synapse.nml'%syn))
 
 
-    # Generate excitatory cells 
+    # Generate Gran cells 
+    if numCells_mf>0:
+        mf_pop = Population(id=mf_group, component=mf_group_component, type="populationList", size=numCells_mf)
+        mf_pop.properties.append(Property("color","0 0 1"))
+        net.populations.append(mf_pop)
+
+        for i in range(0, numCells_mf) :
+                index = i
+                inst = Instance(id=index)
+                mf_pop.instances.append(inst)
+                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+
+    # Generate Gran cells 
     if numCells_grc>0:
         grc_pop = Population(id=grc_group, component=grc_group_component, type="populationList", size=numCells_grc)
         grc_pop.properties.append(Property("color","1 0 0"))
@@ -90,7 +144,7 @@ def generate_granule_cell_layer(network_id,
                 grc_pop.instances.append(inst)
                 inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
 
-    # Generate inhibitory cells
+    # Generate Golgi cells
     if numCells_gol>0:
         gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
         gol_pop.properties.append(Property("color","0 1 0"))
@@ -104,46 +158,16 @@ def generate_granule_cell_layer(network_id,
 
     if connections:
 
-        proj_grc_gol = Projection(id=net_conn_grc_gol, presynaptic_population=grc_group, postsynaptic_population=gol_group, synapse=grc_gol_syn)
-        net.projections.append(proj_grc_gol)
-        proj_gol_grc = Projection(id=net_conn_gol_grc, presynaptic_population=gol_group, postsynaptic_population=grc_group, synapse=gol_grc_syn)
-        net.projections.append(proj_gol_grc)
-
-        count_grc_gol = 0
-        count_gol_grc = 0
-
-        # Generate exc -> *  connections
-
-
-        def add_connection(projection, id, pre_pop, pre_component, pre_cell_id, pre_seg_id, post_pop, post_component, post_cell_id, post_seg_id):
-
-            connection = Connection(id=id, \
-                                    pre_cell_id="../%s/%i/%s"%(pre_pop, pre_cell_id, pre_component), \
-                                    pre_segment_id=pre_seg_id, \
-                                    pre_fraction_along=0.5,
-                                    post_cell_id="../%s/%i/%s"%(post_pop, post_cell_id, post_component), \
-                                    post_segment_id=post_seg_id,
-                                    post_fraction_along=0.5)
-
-            projection.connections.append(connection)
-
-
-        for i in range(0, numCells_grc):
-            for j in range(0, numCells_gol):
-                if i != j:
-                    if random()<connection_probability_grc_gol:
-
-                            add_connection(proj_grc_gol, count_grc_gol, grc_group, grc_group_component, i, 0, gol_group, gol_group_component, j, 0)
-                    count_grc_gol+=1
-
-                    if random()<connection_probability_gol_grc:
-
-                            add_connection(proj_gol_grc, count_gol_grc, gol_group, gol_group_component, j, 0, grc_group, grc_group_component, i, 0)
-                    count_gol_grc+=1
+        add_probabilistic_projection(net, mf_group, mf_group_component, grc_group, grc_group_component, 'NetConn', mf_grc_syn, numCells_mf, numCells_grc, 1)
+    
+        add_probabilistic_projection(net, grc_group, grc_group_component, gol_group, gol_group_component, 'NetConn', grc_gol_syn, numCells_grc, numCells_gol, connection_probability_grc_gol)
+        
+        add_probabilistic_projection(net, gol_group, gol_group_component, grc_group, grc_group_component, 'NetConn', gol_grc_syn, numCells_gol, numCells_grc, connection_probability_gol_grc)
+    
 
     if inputs:
         
-        mf_input_syn = "MF_AMPA"
+        mf_input_syn = "MFSpikeSyn"
         nml_doc.includes.append(IncludeType(href='%s.synapse.nml'%mf_input_syn))
         
         rand_spiker_id = "input%sHz"%input_firing_rate
@@ -159,14 +183,14 @@ def generate_granule_cell_layer(network_id,
         
         input_list = InputList(id="Input_0",
                              component=rand_spiker_id,
-                             populations=grc_group)
+                             populations=mf_group)
                              
         count = 0
-        for i in range(0, numCells_grc):
+        for i in range(0, numCells_mf):
             
-            for j in range(num_inputs_per_grc):
+            for j in range(num_inputs_per_mf):
                 input = Input(id=count, 
-                              target="../%s/%i/%s"%(grc_group, i, grc_group_component), 
+                              target="../%s/%i/%s"%(mf_group, i, mf_group_component), 
                               destination="synapses")  
                 input_list.input.append(input)
             
@@ -206,9 +230,23 @@ def generate_granule_cell_layer(network_id,
         
 
         # Specify Displays and Output Files
+        if numCells_mf>0:
+            disp_mf = "display_mf"
+            ls.create_display(disp_mf, "Voltages Mossy fibers", "-70", "10")
+
+            of_mf = 'Volts_file_mf'
+            ls.create_output_file(of_mf, "v_mf.dat")
+
+
+            for i in range(numCells_mf):
+                quantity = "%s/%i/%s/v"%(mf_group, i, mf_group_component)
+                ls.add_line_to_display(disp_mf, "MF %i: Vm"%i, quantity, "1mV", pynml.get_next_hex_color())
+                ls.add_column_to_output_file(of_mf, "v_%i"%i, quantity)
+
+        # Specify Displays and Output Files
         if numCells_grc>0:
             disp_grc = "display_grc"
-            ls.create_display(disp_grc, "Voltages Granule cells", "-95", "-38")
+            ls.create_display(disp_grc, "Voltages Granule cells", "-75", "30")
 
             of_grc = 'Volts_file_grc'
             ls.create_output_file(of_grc, "v_grc.dat")
@@ -221,7 +259,7 @@ def generate_granule_cell_layer(network_id,
         
         if numCells_gol>0:
             disp_gol = "display_gol"
-            ls.create_display(disp_gol, "Voltages Golgi cells", "-95", "-38")
+            ls.create_display(disp_gol, "Voltages Golgi cells", "-75", "30")
 
             of_gol = 'Volts_file_gol'
             ls.create_output_file(of_gol, "v_gol.dat")
@@ -250,6 +288,7 @@ if __name__ == "__main__":
                                 x_size = 1000,
                                 y_size = 100, 
                                 z_size = 1000,
+                                numCells_mf = 40,
                                 numCells_grc = 40,
                                 numCells_gol = 20,
                                 connections = True,
@@ -258,6 +297,7 @@ if __name__ == "__main__":
     x_size = 200
     y_size = 30
     z_size = 200
+    numCells_mf = 4
     numCells_grc = 4
     numCells_gol = 4
 
@@ -265,13 +305,14 @@ if __name__ == "__main__":
                                 x_size,
                                 y_size, 
                                 z_size,
+                                numCells_mf,
                                 numCells_grc,
                                 numCells_gol,
                                 connections = True,
                                 connection_probability_grc_gol =   0.75,
                                 connection_probability_gol_grc =   0.75,
                                 inputs = True,
-                                num_inputs_per_grc = 12,
+                                num_inputs_per_mf = 1,
                                 input_firing_rate = 150, # Hz
                                 generate_lems_simulation = True,
                                 duration = 100,

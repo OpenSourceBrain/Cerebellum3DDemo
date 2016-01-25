@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="MFSpikeSyn">
+
+    <notes>ChannelML file describing a synaptic mechanism</notes>
+
+    <expTwoSynapse id="MFSpikeSyn" tauRise="2.4e-4s" tauDecay="2.6e-4s" gbase="1e-7S" erev="0.040V">
+
+        <notes>Fast spiking synapse, used for input to Mossy Fibers</notes>
+</expTwoSynapse>
+
+</neuroml>
