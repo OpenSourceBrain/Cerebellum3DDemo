@@ -1,22 +1,14 @@
 #
 #
 
+import sys
 from GenerateGranCellLayer import generate_granule_cell_layer
-from neuroml import Connection
 from neuroml import IncludeType
-from neuroml import Input
-from neuroml import InputList
 from neuroml import Instance
 from neuroml import Location
-from neuroml import Network
-from neuroml import NeuroMLDocument
-from neuroml import PoissonFiringSynapse
 from neuroml import Population
-from neuroml import Projection
-from neuroml import __version__
+from neuroml import Property
 import neuroml.writers as writers
-from pyneuroml import pynml
-from pyneuroml.lems.LEMSSimulation import LEMSSimulation
 from random import random
 from random import seed
 
@@ -29,6 +21,8 @@ def generate_cerebellar_cortex(network_id,
                                 numCells_grc,
                                 numCells_gol,
                                 numCells_purk,
+                                grc_group_component = "Granule_98",
+                                gol_group_component = "Golgi_98",
                                 connections = True,
                                 connection_probability_grc_gol =   0.2,
                                 connection_probability_gol_grc =   0.1,
@@ -50,6 +44,8 @@ def generate_cerebellar_cortex(network_id,
                                 z_size,     # um
                                 numCells_grc,
                                 numCells_gol,
+                                grc_group_component = grc_group_component,
+                                gol_group_component = gol_group_component,
                                 connections = connections,
                                 connection_probability_grc_gol =   connection_probability_grc_gol,
                                 connection_probability_gol_grc =   connection_probability_gol_grc,
@@ -76,6 +72,7 @@ def generate_cerebellar_cortex(network_id,
         nml_doc.includes.append(IncludeType(href='%s.cell.nml'%purk_group_component))
         
         purk_pop = Population(id=purk_group, component=purk_group_component, type="populationList", size=numCells_purk)
+        purk_pop.properties.append(Property("color","1 1 0"))
         net.populations.append(purk_pop)
 
         for i in range(0, numCells_purk):
@@ -108,26 +105,30 @@ if __name__ == "__main__":
     generate_cerebellar_cortex("CerebellarCortex",
                                 random_seed = 123456,
                                 x_size = 600,
+                                grc_group_component = "Granule_98",
+                                gol_group_component = "Golgi_040408_C1",
                                 grc_y_size = 100, 
                                 purk_y_size = 30, 
                                 z_size = 600,
-                                numCells_grc = 200,
-                                numCells_gol = 40,
-                                numCells_purk = 4,
+                                numCells_grc = 20,
+                                numCells_gol = 2,
+                                numCells_purk = 0,
                                 connections = True,
                                 generate_lems_simulation = True,
                                 inputs = True)
-    large = False
+    large = '-large' in sys.argv
     if large:
     
       generate_cerebellar_cortex( "CerebellarCortexLarge",
                                 random_seed = 123,
                                 x_size = 1000,
+                                grc_group_component = "Granule_98",
+                                gol_group_component = "Golgi_040408_C1",
                                 grc_y_size = 150, 
                                 purk_y_size = 30, 
                                 z_size = 1000,
                                 numCells_grc = 2200,
-                                numCells_gol = 400,
+                                numCells_gol = 40,
                                 numCells_purk = 20,
                                 connections = False,
                                 generate_lems_simulation = True)

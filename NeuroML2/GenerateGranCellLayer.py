@@ -7,6 +7,7 @@ from neuroml import Population
 from neuroml import Location
 from neuroml import Instance
 from neuroml import Projection
+from neuroml import Property
 from neuroml import Connection
 from neuroml import IncludeType
 from neuroml import InputList
@@ -30,6 +31,8 @@ def generate_granule_cell_layer(network_id,
                                 z_size,     # um
                                 numCells_grc,
                                 numCells_gol,
+                                grc_group_component = "Granule_98",
+                                gol_group_component = "Golgi_98",
                                 connections = True,
                                 connection_probability_grc_gol =   0.2,
                                 connection_probability_gol_grc =   0.1,
@@ -53,10 +56,6 @@ def generate_granule_cell_layer(network_id,
                   
     net.notes = "Network generated using libNeuroML v%s"%__version__
     nml_doc.networks.append(net)
-
-    # The names of the cell type/component used in the populations (Cell Type in neuroConstruct)
-    grc_group_component = "Granule_98"
-    gol_group_component = "Golgi_98"
 
     if numCells_grc>0:
         nml_doc.includes.append(IncludeType(href='%s.cell.nml'%grc_group_component))
@@ -82,6 +81,7 @@ def generate_granule_cell_layer(network_id,
     # Generate excitatory cells 
     if numCells_grc>0:
         grc_pop = Population(id=grc_group, component=grc_group_component, type="populationList", size=numCells_grc)
+        grc_pop.properties.append(Property("color","1 0 0"))
         net.populations.append(grc_pop)
 
         for i in range(0, numCells_grc) :
@@ -93,6 +93,7 @@ def generate_granule_cell_layer(network_id,
     # Generate inhibitory cells
     if numCells_gol>0:
         gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
+        gol_pop.properties.append(Property("color","0 1 0"))
         net.populations.append(gol_pop)
 
         for i in range(0, numCells_gol) :

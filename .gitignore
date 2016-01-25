@@ -18,6 +18,7 @@ NeuroML2/*nrn.py
 NeuroML2/*geppetto.*
 NeuroML2/*.js
 NeuroML2/*.svg
+NeuroML2/*.png
 *~
 
 *.pov
