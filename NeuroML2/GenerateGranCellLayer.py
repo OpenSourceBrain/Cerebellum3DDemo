@@ -56,12 +56,24 @@ def add_probabilistic_projection(net, presynaptic_population, pre_component, pos
                 if i != j:
                     if random() < connection_probability:
                         add_connection(proj, count, presynaptic_population, pre_component, i, 0, postsynaptic_population, post_component, j, 0)
-                        
-                    count+=1
+                        count+=1
                     
         net.projections.append(proj)
         
         return proj
+    
+def add_population_in_rectangular_region(net, pop_id, cell_id, size, x_min, y_min, z_min, x_size, y_size, z_size, color=None):
+    
+        pop = Population(id=pop_id, component=cell_id, type="populationList", size=size)
+        if color is not None:
+            pop.properties.append(Property("color",color))
+        net.populations.append(pop)
+
+        for i in range(0, size) :
+                index = i
+                inst = Instance(id=index)
+                pop.instances.append(inst)
+                inst.location = Location(x=str(x_min +(x_size)*random()), y=str(y_min +(y_size)*random()), z=str(z_min+(z_size)*random()))
 
 
 def generate_granule_cell_layer(network_id,
@@ -122,43 +134,21 @@ def generate_granule_cell_layer(network_id,
 
     # Generate Gran cells 
     if numCells_mf>0:
-        mf_pop = Population(id=mf_group, component=mf_group_component, type="populationList", size=numCells_mf)
-        mf_pop.properties.append(Property("color","0 0 1"))
-        net.populations.append(mf_pop)
-
-        for i in range(0, numCells_mf) :
-                index = i
-                inst = Instance(id=index)
-                mf_pop.instances.append(inst)
-                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+        add_population_in_rectangular_region(net, mf_group, mf_group_component, numCells_mf, 0, 0, 0, x_size, y_size, z_size, color="0 0 1")
+        
 
     # Generate Gran cells 
     if numCells_grc>0:
-        grc_pop = Population(id=grc_group, component=grc_group_component, type="populationList", size=numCells_grc)
-        grc_pop.properties.append(Property("color","1 0 0"))
-        net.populations.append(grc_pop)
-
-        for i in range(0, numCells_grc) :
-                index = i
-                inst = Instance(id=index)
-                grc_pop.instances.append(inst)
-                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
-
+        add_population_in_rectangular_region(net, grc_group, grc_group_component, numCells_grc, 0, 0, 0, x_size, y_size, z_size, color="1 0 0")
+        
+        
     # Generate Golgi cells
     if numCells_gol>0:
-        gol_pop = Population(id=gol_group, component=gol_group_component, type="populationList", size=numCells_gol)
-        gol_pop.properties.append(Property("color","0 1 0"))
-        net.populations.append(gol_pop)
-
-        for i in range(0, numCells_gol) :
-                index = i
-                inst = Instance(id=index)
-                gol_pop.instances.append(inst)
-                inst.location = Location(x=str(x_size*random()), y=str(y_size*random()), z=str(z_size*random()))
+        add_population_in_rectangular_region(net, gol_group, gol_group_component, numCells_gol, 0, 0, 0, x_size, y_size, z_size, color="0 1 0")
 
     if connections:
 
-        add_probabilistic_projection(net, mf_group, mf_group_component, grc_group, grc_group_component, 'NetConn', mf_grc_syn, numCells_mf, numCells_grc, 1)
+        add_probabilistic_projection(net, mf_group, mf_group_component, grc_group, grc_group_component, 'NetConn', mf_grc_syn, numCells_mf, numCells_grc, 0.01)
     
         add_probabilistic_projection(net, grc_group, grc_group_component, gol_group, gol_group_component, 'NetConn', grc_gol_syn, numCells_grc, numCells_gol, connection_probability_grc_gol)
         

@@ -55,36 +55,25 @@
             </instance>
         </population>
         <projection id="NetConn_MossyFibers_Grans" postsynapticPopulation="Grans" presynapticPopulation="MossyFibers" synapse="MF_AMPA">
-            <connection id="0" preCellId="../MossyFibers/0/MossyFiber" postCellId="../Grans/1/Granule_98"/>
-            <connection id="1" preCellId="../MossyFibers/0/MossyFiber" postCellId="../Grans/2/Granule_98"/>
-            <connection id="2" preCellId="../MossyFibers/0/MossyFiber" postCellId="../Grans/3/Granule_98"/>
-            <connection id="3" preCellId="../MossyFibers/1/MossyFiber" postCellId="../Grans/0/Granule_98"/>
-            <connection id="4" preCellId="../MossyFibers/1/MossyFiber" postCellId="../Grans/2/Granule_98"/>
-            <connection id="5" preCellId="../MossyFibers/1/MossyFiber" postCellId="../Grans/3/Granule_98"/>
-            <connection id="6" preCellId="../MossyFibers/2/MossyFiber" postCellId="../Grans/0/Granule_98"/>
-            <connection id="7" preCellId="../MossyFibers/2/MossyFiber" postCellId="../Grans/1/Granule_98"/>
-            <connection id="8" preCellId="../MossyFibers/2/MossyFiber" postCellId="../Grans/3/Granule_98"/>
-            <connection id="9" preCellId="../MossyFibers/3/MossyFiber" postCellId="../Grans/0/Granule_98"/>
-            <connection id="10" preCellId="../MossyFibers/3/MossyFiber" postCellId="../Grans/1/Granule_98"/>
-            <connection id="11" preCellId="../MossyFibers/3/MossyFiber" postCellId="../Grans/2/Granule_98"/>
+            <connection id="0" preCellId="../MossyFibers/0/MossyFiber" postCellId="../Grans/3/Granule_98"/>
         </projection>
         <projection id="NetConn_Grans_Golgis" postsynapticPopulation="Golgis" presynapticPopulation="Grans" synapse="AMPA_GranGol">
-            <connection id="2" preCellId="../Grans/0/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
-            <connection id="3" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/0/Golgi_98"/>
-            <connection id="4" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/2/Golgi_98"/>
-            <connection id="5" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
-            <connection id="7" preCellId="../Grans/2/Granule_98" postCellId="../Golgis/1/Golgi_98"/>
-            <connection id="8" preCellId="../Grans/2/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
-            <connection id="10" preCellId="../Grans/3/Granule_98" postCellId="../Golgis/1/Golgi_98"/>
+            <connection id="0" preCellId="../Grans/0/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
+            <connection id="1" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/0/Golgi_98"/>
+            <connection id="2" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/2/Golgi_98"/>
+            <connection id="3" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
+            <connection id="4" preCellId="../Grans/2/Granule_98" postCellId="../Golgis/1/Golgi_98"/>
+            <connection id="5" preCellId="../Grans/2/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
+            <connection id="6" preCellId="../Grans/3/Granule_98" postCellId="../Golgis/1/Golgi_98"/>
         </projection>
         <projection id="NetConn_Golgis_Grans" postsynapticPopulation="Grans" presynapticPopulation="Golgis" synapse="GABAA">
             <connection id="0" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/1/Granule_98"/>
             <connection id="1" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/2/Granule_98"/>
             <connection id="2" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/3/Granule_98"/>
             <connection id="3" preCellId="../Golgis/1/Golgi_98" postCellId="../Grans/0/Granule_98"/>
-            <connection id="5" preCellId="../Golgis/1/Golgi_98" postCellId="../Grans/3/Granule_98"/>
-            <connection id="7" preCellId="../Golgis/2/Golgi_98" postCellId="../Grans/1/Granule_98"/>
-            <connection id="10" preCellId="../Golgis/3/Golgi_98" postCellId="../Grans/1/Granule_98"/>
+            <connection id="4" preCellId="../Golgis/1/Golgi_98" postCellId="../Grans/3/Granule_98"/>
+            <connection id="5" preCellId="../Golgis/2/Golgi_98" postCellId="../Grans/1/Granule_98"/>
+            <connection id="6" preCellId="../Golgis/3/Golgi_98" postCellId="../Grans/1/Granule_98"/>
         </projection>
         <inputList id="Input_0" component="input150Hz" population="MossyFibers">
             <input destination="synapses" id="0" target="../MossyFibers/0/MossyFiber"/>

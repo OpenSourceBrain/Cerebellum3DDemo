@@ -3,13 +3,10 @@
 
 import sys
 from GenerateGranCellLayer import generate_granule_cell_layer
+from GenerateGranCellLayer import add_population_in_rectangular_region
+from GenerateGranCellLayer import add_probabilistic_projection
 from neuroml import IncludeType
-from neuroml import Instance
-from neuroml import Location
-from neuroml import Population
-from neuroml import Property
 import neuroml.writers as writers
-from random import random
 from random import seed
 
 
@@ -73,15 +70,30 @@ def generate_cerebellar_cortex(network_id,
     if numCells_purk>0:
         nml_doc.includes.append(IncludeType(href='%s.cell.nml'%purk_group_component))
         
-        purk_pop = Population(id=purk_group, component=purk_group_component, type="populationList", size=numCells_purk)
-        purk_pop.properties.append(Property("color","1 1 0"))
-        net.populations.append(purk_pop)
+        add_population_in_rectangular_region(net, purk_group, purk_group_component, numCells_purk, 0, grc_y_size, 0, x_size, purk_y_size, z_size, color="1 1 0")
+        
+    extra_populations = False
+    if extra_populations:
+        
+        size_pop = 200
+        down = -300
+        out = 300
+        y_d = 100
+        side = 200
+        
+        mf_grc_syn = "MF_AMPA"
+        
+        cg1 = "cg1"
+        add_population_in_rectangular_region(net, cg1, "MossyFiber", size_pop, -1*out+(side/2), down, 0, side, y_d, side, color="0 1 1")
+        
 
-        for i in range(0, numCells_purk):
-                index = i
-                inst = Instance(id=index)
-                purk_pop.instances.append(inst)
-                inst.location = Location(x=str(x_size*random()), y=str(grc_y_size + purk_y_size*random()), z=str(z_size*random()))
+        add_probabilistic_projection(net, cg1, "MossyFiber", "MossyFibers", "MossyFiber", 'NetConn', mf_grc_syn, size_pop, numCells_mf, 0.01)
+        
+        cg2 = "cg2"
+        add_population_in_rectangular_region(net, cg2, "MossyFiber", size_pop, out+(side/2), down, 0, side, y_d, side, color="0 0.5 1")
+        
+        add_probabilistic_projection(net, cg2, "MossyFiber", "MossyFibers", "MossyFiber", 'NetConn', mf_grc_syn, size_pop, numCells_mf, 0.01)
+        
 
 
     #######   Write to file  ######    
@@ -119,6 +131,7 @@ if __name__ == "__main__":
                                 connections = True,
                                 generate_lems_simulation = True,
                                 inputs = True)
+                                
     large = '-large' in sys.argv
     if large:
     
