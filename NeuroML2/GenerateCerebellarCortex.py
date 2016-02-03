@@ -72,6 +72,7 @@ def generate_cerebellar_cortex(network_id,
         
         add_population_in_rectangular_region(net, purk_group, purk_group_component, numCells_purk, 0, grc_y_size, 0, x_size, purk_y_size, z_size, color="1 1 0")
         
+    '''
     extra_populations = False
     if extra_populations:
         
@@ -85,15 +86,15 @@ def generate_cerebellar_cortex(network_id,
         
         cg1 = "cg1"
         add_population_in_rectangular_region(net, cg1, "MossyFiber", size_pop, -1*out+(side/2), down, 0, side, y_d, side, color="0 1 1")
-        
-
         add_probabilistic_projection(net, cg1, "MossyFiber", "MossyFibers", "MossyFiber", 'NetConn', mf_grc_syn, size_pop, numCells_mf, 0.01)
         
         cg2 = "cg2"
-        add_population_in_rectangular_region(net, cg2, "MossyFiber", size_pop, out+(side/2), down, 0, side, y_d, side, color="0 0.5 1")
-        
+        add_population_in_rectangular_region(net, cg2, "MossyFiber", size_pop, out+(side/4), down, 0, side, y_d, side, color="0 0 1")
         add_probabilistic_projection(net, cg2, "MossyFiber", "MossyFibers", "MossyFiber", 'NetConn', mf_grc_syn, size_pop, numCells_mf, 0.01)
-        
+
+        add_population_in_rectangular_region(net, "ff", "MossyFiber", numCells_grc*4, 0, 0, 0, x_size, grc_y_size, z_size, color="1 0 0")
+        add_population_in_rectangular_region(net, "ff2", "MossyFiber", numCells_mf, 0, 0, 0, x_size, grc_y_size, z_size, color="0 1 1")
+    '''  
 
 
     #######   Write to file  ######    
