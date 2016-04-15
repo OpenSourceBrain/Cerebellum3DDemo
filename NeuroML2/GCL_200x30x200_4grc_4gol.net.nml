@@ -6,58 +6,58 @@
     <include href="AMPA_GranGol.synapse.nml"></include>
     <include href="GABAA.synapse.nml"></include>
     <include href="MFSpikeSyn.synapse.nml"></include>
-    <poissonFiringSynapse id="input150Hz" synapse="MFSpikeSyn" averageRate="150 per_s" spikeTarget="./MFSpikeSyn"/>
+    <poissonFiringSynapse id="input150Hz" averageRate="150 per_s" synapse="MFSpikeSyn" spikeTarget="./MFSpikeSyn"/>
     <network id="GCL_200x30x200_4grc_4gol" type="networkWithTemperature" temperature="32.0 degC">
-        <notes>Network generated using libNeuroML v0.2.11</notes>
-        <population id="MossyFibers" type="populationList" component="MossyFiber" size="4">
+        <notes>Network generated using libNeuroML v0.2.12</notes>
+        <population id="MossyFibers" component="MossyFiber" size="4" type="populationList">
             <property tag="color" value="0 0 1"/>
             <instance id="0">
-                <location y="13.2219779753" x="193.290707137999988" z="1.49829401172"/>
+                <location x="193.290707137999988" y="13.2219779753" z="1.49829401172"/>
             </instance>
             <instance id="1">
-                <location y="28.178069920900001" x="182.195192490000011" z="116.445514611999997"/>
+                <location x="182.195192490000011" y="28.178069920900001" z="116.445514611999997"/>
             </instance>
             <instance id="2">
-                <location y="2.51814680511" x="134.312696297999992" z="153.296186557999988"/>
+                <location x="134.312696297999992" y="2.51814680511" z="153.296186557999988"/>
             </instance>
             <instance id="3">
-                <location y="0.924420651798" x="47.361955072599997" z="157.754543447000003"/>
+                <location x="47.361955072599997" y="0.924420651798" z="157.754543447000003"/>
             </instance>
         </population>
-        <population id="Grans" type="populationList" component="Granule_98" size="4">
+        <population id="Grans" component="Granule_98" size="4" type="populationList">
             <property tag="color" value="1 0 0"/>
             <instance id="0">
-                <location y="18.698444251200002" x="69.2177931194" z="123.163139021000006"/>
+                <location x="69.2177931194" y="18.698444251200002" z="123.163139021000006"/>
             </instance>
             <instance id="1">
-                <location y="5.4927194223" x="29.710927741700001" z="22.882593937700001"/>
+                <location x="29.710927741700001" y="5.4927194223" z="22.882593937700001"/>
             </instance>
             <instance id="2">
-                <location y="14.602546218100001" x="2.92375609738" z="192.980312182999995"/>
+                <location x="2.92375609738" y="14.602546218100001" z="192.980312182999995"/>
             </instance>
             <instance id="3">
-                <location y="16.2326455665" x="12.912456195400001" z="93.179711801699995"/>
+                <location x="12.912456195400001" y="16.2326455665" z="93.179711801699995"/>
             </instance>
         </population>
-        <population id="Golgis" type="populationList" component="Golgi_98" size="4">
+        <population id="Golgis" component="Golgi_98" size="4" type="populationList">
             <property tag="color" value="0 1 0"/>
             <instance id="0">
-                <location y="2.66786489972" x="120.292689912" z="115.800537237"/>
+                <location x="120.292689912" y="2.66786489972" z="115.800537237"/>
             </instance>
             <instance id="1">
-                <location y="16.6929768167" x="53.917100763900002" z="128.92684683600001"/>
+                <location x="53.917100763900002" y="16.6929768167" z="128.92684683600001"/>
             </instance>
             <instance id="2">
-                <location y="10.657174423300001" x="96.207274273300001" z="49.830424272199998"/>
+                <location x="96.207274273300001" y="10.657174423300001" z="49.830424272199998"/>
             </instance>
             <instance id="3">
-                <location y="13.6016405843" x="186.703099608000002" z="106.032241381999995"/>
+                <location x="186.703099608000002" y="13.6016405843" z="106.032241381999995"/>
             </instance>
         </population>
-        <projection id="NetConn_MossyFibers_Grans" postsynapticPopulation="Grans" presynapticPopulation="MossyFibers" synapse="MF_AMPA">
+        <projection id="NetConn_MossyFibers_Grans" presynapticPopulation="MossyFibers" postsynapticPopulation="Grans" synapse="MF_AMPA">
             <connection id="0" preCellId="../MossyFibers/0/MossyFiber" postCellId="../Grans/3/Granule_98"/>
         </projection>
-        <projection id="NetConn_Grans_Golgis" postsynapticPopulation="Golgis" presynapticPopulation="Grans" synapse="AMPA_GranGol">
+        <projection id="NetConn_Grans_Golgis" presynapticPopulation="Grans" postsynapticPopulation="Golgis" synapse="AMPA_GranGol">
             <connection id="0" preCellId="../Grans/0/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
             <connection id="1" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/0/Golgi_98"/>
             <connection id="2" preCellId="../Grans/1/Granule_98" postCellId="../Golgis/2/Golgi_98"/>
@@ -66,7 +66,7 @@
             <connection id="5" preCellId="../Grans/2/Granule_98" postCellId="../Golgis/3/Golgi_98"/>
             <connection id="6" preCellId="../Grans/3/Granule_98" postCellId="../Golgis/1/Golgi_98"/>
         </projection>
-        <projection id="NetConn_Golgis_Grans" postsynapticPopulation="Grans" presynapticPopulation="Golgis" synapse="GABAA">
+        <projection id="NetConn_Golgis_Grans" presynapticPopulation="Golgis" postsynapticPopulation="Grans" synapse="GABAA">
             <connection id="0" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/1/Granule_98"/>
             <connection id="1" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/2/Granule_98"/>
             <connection id="2" preCellId="../Golgis/0/Golgi_98" postCellId="../Grans/3/Granule_98"/>
@@ -75,11 +75,11 @@
             <connection id="5" preCellId="../Golgis/2/Golgi_98" postCellId="../Grans/1/Granule_98"/>
             <connection id="6" preCellId="../Golgis/3/Golgi_98" postCellId="../Grans/1/Granule_98"/>
         </projection>
-        <inputList id="Input_0" component="input150Hz" population="MossyFibers">
-            <input destination="synapses" id="0" target="../MossyFibers/0/MossyFiber"/>
-            <input destination="synapses" id="1" target="../MossyFibers/1/MossyFiber"/>
-            <input destination="synapses" id="2" target="../MossyFibers/2/MossyFiber"/>
-            <input destination="synapses" id="3" target="../MossyFibers/3/MossyFiber"/>
+        <inputList id="Input_0" population="MossyFibers" component="input150Hz">
+            <input id="0" target="../MossyFibers/0/MossyFiber" destination="synapses"/>
+            <input id="1" target="../MossyFibers/1/MossyFiber" destination="synapses"/>
+            <input id="2" target="../MossyFibers/2/MossyFiber" destination="synapses"/>
+            <input id="3" target="../MossyFibers/3/MossyFiber" destination="synapses"/>
         </inputList>
     </network>
 </neuroml>

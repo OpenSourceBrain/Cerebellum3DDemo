@@ -36085,7 +36085,7 @@ See the main project description for more details on the cells included with thi
                 
                 <channelDensity condDensity="8.0 mS_per_cm2" id="KA_soma_group" ionChannel="Golgi_KA" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
-                <channelDensity condDensity="9.0 mS_per_cm2" id="KC_soma_group" ionChannel="Golgi_KC" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
+                <channelDensity condDensity="3.0 mS_per_cm2" id="Golgi_KC_soma_group" ionChannel="Golgi_KC" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
                 <channelDensity condDensity="1.0 mS_per_cm2" id="Kslow_soma_group" ionChannel="Golgi_Kslow" segmentGroup="soma_group" ion="k" erev="-84.69 mV"/>
                 
@@ -36101,7 +36101,8 @@ See the main project description for more details on the cells included with thi
                 
                 <channelDensity condDensity="48.0 mS_per_cm2" id="NaT_soma_group" ionChannel="Golgi_NaT" segmentGroup="soma_group" ion="na" erev="87.39 mV"/>
                 
-                
+                <!--Reversal potential for ca in Golgi_Ca_HVA will be calculated by Nernst equation from internal & external calcium-->
+
                 <channelDensityNernst condDensity="0.46 mS_per_cm2" id="Ca_HVA_soma_group" ionChannel="Golgi_Ca_HVA" segmentGroup="soma_group" ion="ca"/>
                 
 
@@ -36110,16 +36111,16 @@ See the main project description for more details on the cells included with thi
                 <specificCapacitance value="1.0 uF_per_cm2"/>
 
                 <initMembPotential value="-60.0 mV"/>
-                
+
                 <channelDensityNernstCa2 condDensity="0.25 mS_per_cm2" id="Ca_LVA_soma_group" ionChannel="Golgi_Ca_LVA" segmentGroup="soma_group" ion="ca"/>
 
             </membraneProperties2CaPools>
 
             <intracellularProperties2CaPools>
 
-                <species id="ca" ion="ca"  concentrationModel="Golgi_CALC" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
+                <species id="ca" ion="ca"  segmentGroup="soma_group" concentrationModel="Golgi_CALC" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
 
-                <species id="ca2"  ion="ca2" concentrationModel="Golgi_CALC_ca2" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
+                <species id="ca2"  ion="ca2"  segmentGroup="soma_group" concentrationModel="Golgi_CALC_ca2" initialConcentration="5e-11mol_per_cm3" initialExtConcentration="2.0E-6 mol_per_cm3"/>
 
                 <resistivity value="0.1 kohm_cm"/>
 

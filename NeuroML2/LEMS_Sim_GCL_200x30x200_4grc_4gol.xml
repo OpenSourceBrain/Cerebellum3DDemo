@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.1.7 (libNeuroML v0.2.11)
+        This LEMS file has been automatically generated using PyNeuroML v0.1.10 (libNeuroML v0.2.12)
 
      -->
     
@@ -58,7 +58,7 @@
     <Include file="GABAA.synapse.nml"/>
     <Include file="MFSpikeSyn.synapse.nml"/>
    
-    <Simulation id="Sim_GCL_200x30x200_4grc_4gol" length="100ms" step="0.01ms" target="GCL_200x30x200_4grc_4gol">
+    <Simulation id="Sim_GCL_200x30x200_4grc_4gol" length="100ms" step="0.01ms" target="GCL_200x30x200_4grc_4gol" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="display_mf" title="Voltages Mossy fibers" timeScale="1ms" xmin="-10.0" xmax="110.0" ymin="-70" ymax="10">
             <Line id="MF 0: Vm" quantity="MossyFibers/0/MossyFiber/v" scale="1mV" color="#d092e0" timeScale="1ms"/>

@@ -2,7 +2,7 @@
     
     <!-- 
 
-        This LEMS file has been automatically generated using PyNeuroML v0.1.7 (libNeuroML v0.2.11)
+        This LEMS file has been automatically generated using PyNeuroML v0.1.10 (libNeuroML v0.2.12)
 
      -->
     
@@ -77,7 +77,7 @@
     <Include file="purk2.cell.nml"/>
     <Include file="Leak.channel.nml"/>
    
-    <Simulation id="Sim_CerebellarCortexLarge" length="500ms" step="0.01ms" target="CerebellarCortexLarge">
+    <Simulation id="Sim_CerebellarCortexLarge" length="500ms" step="0.01ms" target="CerebellarCortexLarge" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
         
         <Display id="display_mf" title="Voltages Mossy fibers" timeScale="1ms" xmin="-50.0" xmax="550.0" ymin="-70" ymax="10">
             <Line id="MF 0: Vm" quantity="MossyFibers/0/MossyFiber/v" scale="1mV" color="#061973" timeScale="1ms"/>
