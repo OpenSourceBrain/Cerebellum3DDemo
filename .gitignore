@@ -23,5 +23,4 @@ NeuroML2/*.png
 
 *.pov
 *.ini
-
-
+/NeuroML2/output.avi
