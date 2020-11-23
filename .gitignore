@@ -24,3 +24,6 @@ NeuroML2/*.png
 *.pov
 *.ini
 /NeuroML2/output.avi
+/NeuroML2/*.inc
+/NeuroML2/CerebellarCortex.net_pov.bat
+/NeuroML2/CerebellarCortex.net_pov.sh
