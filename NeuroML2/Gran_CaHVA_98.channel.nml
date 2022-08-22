@@ -35,14 +35,14 @@
 
         <gate id="m" type="gateHHrates" instances="2">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
-            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <!--Note: offset from ChannelML file incorporated into the midpoint of rates!!-->
             <forwardRate type="HHSigmoidRate" rate="1600per_s" scale="0.01388888889V" midpoint="0.015V"/>
             <reverseRate type="HHExpLinearRate" rate="100per_s" scale="-0.005V" midpoint="0.0011000000000000003V"/>
         </gate>
 
         <gate id="h" type="gateHHrates" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
-            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <!--Note: offset from ChannelML file incorporated into the midpoint of rates!!-->
             <forwardRate type="Gran_CaHVA_98_h_alpha_rate"/>
             <reverseRate type="Gran_CaHVA_98_h_beta_rate"/>
         </gate>

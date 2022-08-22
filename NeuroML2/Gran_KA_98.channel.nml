@@ -35,14 +35,14 @@
 
         <gate id="m" type="gateHHtauInf" instances="3">
             <q10Settings type="q10ExpTemp" q10Factor="1" experimentalTemp="17.350264793 degC"/>
-            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <!--Note: offset from ChannelML file incorporated into the midpoint of rates!!-->
             <timeCourse type="Gran_KA_98_m_tau_tau"/>
             <steadyState type="HHSigmoidVariable" rate="1" scale="0.0198V" midpoint="-0.036699999999999997V"/>
         </gate>
 
         <gate id="h" type="gateHHtauInf" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="1" experimentalTemp="17.350264793 degC"/>
-            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <!--Note: offset from ChannelML file incorporated into the midpoint of rates!!-->
             <timeCourse type="Gran_KA_98_h_tau_tau"/>
             <steadyState type="HHSigmoidVariable" rate="1" scale="-0.0084V" midpoint="-0.0688V"/>
         </gate>

@@ -35,7 +35,7 @@
 
         <gate id="m" type="gateHHrates" instances="1">
             <q10Settings type="q10ExpTemp" q10Factor="3" experimentalTemp="17.350264793 degC"/>
-            <notes>Note: offset from ChannelML file incorporated into midpoint of rates!!</notes>
+            <!--Note: offset from ChannelML file incorporated into the midpoint of rates!!-->
             <forwardRate type="Gran_KCa_98_m_alpha_rate"/>
             <reverseRate type="Gran_KCa_98_m_beta_rate"/>
         </gate>
